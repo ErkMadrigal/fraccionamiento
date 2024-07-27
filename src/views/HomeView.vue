@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import SidebarComponent from '@/components/Sidebar.vue'
-import MapaComponent from '@/components/mapa.vue'
+import SidebarComponent from '@/components/Sidebar.vue';
+import MapaComponent from '@/components/mapa.vue';
 
 export default {
   name: 'HomeView',

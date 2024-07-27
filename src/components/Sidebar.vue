@@ -21,13 +21,9 @@
         <vs-navbar-item :active="active == 'components'" id="components">
           Components
         </vs-navbar-item>
-        <vs-navbar-item :active="active == 'license'" id="license">
-          license
-        </vs-navbar-item>
-        <template #right>
+        <!-- <template #right>
           <vs-button flat >Login</vs-button>
-          <vs-button>Get Started</vs-button>
-        </template>
+        </template> -->
       </vs-navbar>
       <vs-sidebar
         background="rgb(0,0,0)"
