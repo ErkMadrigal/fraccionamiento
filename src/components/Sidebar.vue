@@ -9,17 +9,21 @@
         </template> -->
         <vs-navbar-item :active="active == 'guide'" id="guide">
           <router-link to="/" class="nav-link">
-            <template #icon>
-              <box-icon name='home' flip='horizontal' color="#000" ></box-icon>
-            </template>
-            Home
+            <box-icon name='home' flip='horizontal' color="#000" ></box-icon>
+            Mapa
           </router-link>
         </vs-navbar-item>
         <vs-navbar-item :active="active == 'docs'" id="docs">
-          Documents
+          <router-link to="/Cotizador" class="nav-link">
+            <box-icon name='dollar'></box-icon>
+            Cotizador
+          </router-link>
         </vs-navbar-item>
         <vs-navbar-item :active="active == 'components'" id="components">
-          Components
+          <router-link to="/Clientes" class="nav-link">
+            <box-icon name='user' ></box-icon>
+            Clientes
+          </router-link>
         </vs-navbar-item>
         <!-- <template #right>
           <vs-button flat >Login</vs-button>

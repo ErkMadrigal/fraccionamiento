@@ -7,9 +7,16 @@
           </h4>
         </template>
         <div class="con-form">
-          <Area1Component/>
+          <Area1Component v-if="vista == 'Area1Component'"/>
+          <!-- <Area2Component v-if="vista == 'Area2Component'"/>
+          <Area3Component v-if="vista == 'Area3Component'"/>
+          <Area4Component v-if="vista == 'Area4Component'"/>
+          <Area5Component v-if="vista == 'Area5Component'"/>
+          <Area6Component v-if="vista == 'Area6Component'"/>
+          <Area7Component v-if="vista == 'Area7Component'"/>
+          <Area8Component v-if="vista == 'Area8Component'"/> -->
         </div>
-        <template #footer>
+        <!-- <template #footer>
           {{ vista }}
           <div class="footer-dialog">
             <vs-button block>
@@ -19,7 +26,7 @@
               New Here? <a href="#">Create New Account</a>
             </div>
           </div>
-        </template>
+        </template> -->
       </vs-dialog>
     </div>
   </template>
@@ -27,11 +34,25 @@
   <script>
   import { EventBus } from '@/utils/eventBus';
   import Area1Component from '@/components/area1.vue';
+  // import Area2Component from '@/components/area2.vue';
+  // import Area3Component from '@/components/area3.vue';
+  // import Area4Component from '@/components/area4.vue';
+  // import Area5Component from '@/components/area5.vue';
+  // import Area6Component from '@/components/area6.vue';
+  // import Area7Component from '@/components/area7.vue';
+  // import Area8Component from '@/components/area8.vue';
   
   export default {
     name: "PoppupComponent",
     components: {
       Area1Component,
+      // Area2Component,
+      // Area3Component,
+      // Area4Component,
+      // Area5Component,
+      // Area6Component,
+      // Area7Component,
+      // Area8Component,
     },
     props: {
       vista: {
@@ -45,7 +66,7 @@
         checkbox1: false
     }),
     mounted() {
-      // EventBus.$on('activate-modal', this.showModal);
+      EventBus.$on('activate-modal', this.showModal);
     },
     methods: {
       showModal() {

@@ -25,6 +25,18 @@ const routes = [
     path: '/AreaDos',
     name: 'AreaDos',
     component: () => import('../views/AreaDosView.vue')
+  },
+
+  {
+    path: '/Cotizador',
+    name: 'Cotizador',
+    component: () => import('../views/CotizadorView.vue')
+  },
+
+  {
+    path: '/Clientes',
+    name: 'Clientes',
+    component: () => import('../views/ClientesView.vue')
   }
 ]
 
