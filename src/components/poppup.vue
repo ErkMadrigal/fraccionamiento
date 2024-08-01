@@ -1,9 +1,9 @@
 <template>
     <div class="center">
-      <vs-dialog overflow-hidden full-screen v-model="active">
+      <vs-dialog overflow-hidden full-screen not-close v-model="active">
         <template #header>
           <h4 class="not-margin">
-            Bienvenido <b>Vuesax</b>
+            Fraccionamiento <b>Amanecer</b>
           </h4>
         </template>
         <div class="con-form">
@@ -78,8 +78,10 @@
     }
   }
   </script>
-  
+
+
 <style lang="stylus">
+
     getColor(vsColor, alpha = 1)
         unquote("rgba(var(--vs-"+vsColor+"), "+alpha+")")
     getVar(var)
@@ -126,3 +128,4 @@
         margin 0px
     </style>
         
+    

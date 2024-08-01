@@ -1,10 +1,10 @@
-export const openNotification = (VueInstance, position = 'top-right', color = 'danger') => {
+export const openNotification = (VueInstance, position = 'top-right', color = 'danger', title, text ) => {
     VueInstance.$vs.notification({
       progress: 'auto',
       color,
       position,
-      title: 'Area Apartada',
-      text: `Esta area ya se encuentra apartada intenta con las areas en verde`
+      title: title,
+      text: text
     });
   };
   

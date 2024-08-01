@@ -13,12 +13,12 @@
             Mapa
           </router-link>
         </vs-navbar-item>
-        <vs-navbar-item :active="active == 'docs'" id="docs">
+        <!-- <vs-navbar-item :active="active == 'docs'" id="docs">
           <router-link to="/Cotizador" class="nav-link">
             <box-icon name='dollar'></box-icon>
             Cotizador
           </router-link>
-        </vs-navbar-item>
+        </vs-navbar-item> -->
         <vs-navbar-item :active="active == 'components'" id="components">
           <router-link to="/Clientes" class="nav-link">
             <box-icon name='user' ></box-icon>
