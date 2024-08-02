@@ -1,3 +1,4 @@
+
 export const fetchApi = async (url, metod, token) => {
     try {
         let res = await fetch(url,{

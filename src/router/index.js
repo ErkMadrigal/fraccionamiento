@@ -7,26 +7,14 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'home',
+    name: 'Home',
     component: HomeView
   },
   {
-    path: '/home',
-    name: 'home',
+    path: '/Home',
+    name: 'Home',
     component: HomeView
   },
-  {
-    path: '/AreaUno',
-    name: 'AreaUno',
-    component: () => import('../views/AreaUnoView.vue')
-  },
-
-  {
-    path: '/AreaDos',
-    name: 'AreaDos',
-    component: () => import('../views/AreaDosView.vue')
-  },
-
   {
     path: '/Cotizador',
     name: 'Cotizador',

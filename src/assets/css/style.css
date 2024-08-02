@@ -1,18 +1,51 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap');
+
 html, body {
     /* overflow-y: hidden; */
     overflow-x: hidden;
+}
+
+.commissioner {
+        font-family: "Commissioner", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400; 
+        font-style: normal;
+        font-variation-settings:
+          "slnt" 0,
+          "FLAR" 0,
+          "VOLM" 0;
+}
+
+.contenedor{
+        padding-left: 5rem;
+        padding-right: 5rem;
+}
+
+@media (max-width: 800px) {
+        .contenedor {
+                padding-left: 0;
+                padding-right: 0;
+        }
 }
 
 .margin-top{
         margin-top: 6rem;
 }
 
+.margin-top4{
+        margin-top: 4rem;
+}
+
 .margin-top1{
         margin-top: 1rem;
 }
 
-
+.card-rounder {
+        border-radius: 1rem !important;
+        margin: 0.5rem;
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
 
 .puff-out-center {
 	-webkit-animation: puff-out-center 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;

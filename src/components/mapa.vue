@@ -16,32 +16,11 @@
               :id="elementIdSVG"
               :class="[{ 'puff-out-center': isPuffed, 'puff-in-center': !isPuffed }]"
               @animationend="handleAnimationEnd"
-              xml:space="preserve"
-              inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
-              sodipodi:docname="Mapa_1000.svg"
-              xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-              xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:svg="http://www.w3.org/2000/svg">
+             >
               <sodipodi:namedview
                 id="namedview1"
                 pagecolor="#ffffff"
-                bordercolor="#000000"
-                borderopacity="0.25"
-                inkscape:showpageshadow="2"
-                inkscape:pageopacity="0.0"
-                inkscape:pagecheckerboard="0"
-                inkscape:deskcolor="#d1d1d1"
-                inkscape:document-units="mm"
-                inkscape:zoom="1"
-                inkscape:cx="568.5"
-                inkscape:cy="259.5"
-                inkscape:window-width="1920"
-                inkscape:window-height="1009"
-                inkscape:window-x="-8"
-                inkscape:window-y="-8"
-                inkscape:window-maximized="1"
-                inkscape:current-layer="layer1" />
+                bordercolor="#000000"/>
               <defs id="defs1" />
               <g inkscape:label="Capa 1" inkscape:groupmode="layer" id="layer1" transform="translate(-123.10344,-19.67914)">
                 <!-- area perimetral 1 -->
@@ -1936,11 +1915,7 @@ export default {
 </script>
 
 <style>
-.card-rounder {
-    border-radius: 1rem !important;
-    margin: 0.5rem;
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
-}
+
 
 .card-rounder:hover {
     cursor: pointer; /* Cambia el cursor cuando se selecciona */

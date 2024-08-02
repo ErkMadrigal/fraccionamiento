@@ -1,8 +1,9 @@
 <template>
   <div class="home">
     <SidebarComponent/>
-
-    <MapaComponent/>
+    <div class="contenedor">
+      <MapaComponent/>
+    </div>
   </div>
 </template>
 

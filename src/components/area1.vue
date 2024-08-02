@@ -890,7 +890,7 @@
                 
                 <b-col lg="4" sm="6">
                   <p>
-                    Precio Total: <br><strong> $ {{ formattedNumber(montoLista*.09) }} </strong>
+                    Precio Total: <br><strong> $ {{ formattedNumber(montoLista-(montoLista*.09)) }} </strong>
                   </p>
                 </b-col>
                 
@@ -1151,5 +1151,9 @@ export default {
 .svg-container {
   width: 100%;
   overflow-x: auto; /* Habilita el scroll horizontal */
+}
+
+::v-deep .vs-select__input {
+  width: 600px; /* Ajusta el ancho a tu necesidad */
 }
 </style>
