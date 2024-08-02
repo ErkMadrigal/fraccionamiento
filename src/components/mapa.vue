@@ -1655,7 +1655,7 @@
           </vs-button>
 
         </b-col>
-        <b-col lg="12" sm="12" style="margin-top:-33rem">
+        <b-col lg="12" sm="12" style="margin-top:-20rem">
           <b-row  class="margin-top">
               <b-col lg="3" sm="6">
                 <vs-tooltip>
@@ -1927,7 +1927,7 @@ export default {
 
 .svg-container {
   width: 100%;
-  height: 60%;
+  /* height: 50%; */
   overflow-x: auto; /* Habilita el scroll horizontal */
 }
 
