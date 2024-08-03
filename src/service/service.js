@@ -1,12 +1,11 @@
 
-export const fetchApi = async (url, metod, token) => {
+export const fetchApi = async (url, metod) => {
     try {
         let res = await fetch(url,{
             method: metod,
             headers: {
                 'Content-Type': 'application/json',
                 'Access-Control-Allow-Origin': "*",
-                'Authorization': token
             },
         })
         // console.log(res.status)

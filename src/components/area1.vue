@@ -710,109 +710,109 @@
           transform="translate(-50.852958,-153.71035)"><path
             style="fill:#0CD464;fill-opacity:0.5;stroke:#000000;stroke-width:2.14582;stroke-dasharray:none"
             d="m 1163.133,-26.069195 2.2212,-125.107575 169.4071,0.58123 -3.2579,109.995852 -70.7837,15.838237 z"
-            id="path17"  @click="handleClick('120', 56.65, 1)"
+            id="path17"  @click="handleClick('120')"
             transform="translate(149.36466,319.59445)" /><path
             style="fill:#0CD464;fill-opacity:0.5;stroke:#000000;stroke-width:2.18485;stroke-dasharray:none"
             d="m 591.4787,101.05462 77.77909,0.14627 98.97773,-20.185082 2.4401,-106.337326 H 593.46129 Z"
-            id="path18" @click="handleClick('108', 56.76, 1)"
+            id="path18" @click="handleClick('108')"
             transform="translate(149.36466,319.59445)" /><path
             style="fill:#0CD464;fill-opacity:0.5;stroke:#000000;stroke-width:1.82002;stroke-dasharray:none;stroke-dashoffset:0"
             d="M 78.128033,167.58688 H 188.89265 L 185.96624,292.6909 76.079546,292.39826 Z"
-            id="path21" @click="handleClick('109', 0, 1)"
+            id="path21" @click="handleClick('109')"
             inkscape:label="path21" /><path
             style="fill:#0CD464;fill-opacity:0.5;stroke:#000000;stroke-width:1.82002;stroke-dasharray:none;stroke-dashoffset:0"
             d="m 189.10332,168.316 h 110.76462 l -2.92641,125.10402 -109.8867,-0.29264 z"
-            id="path21-5" @click="handleClick('110', 0, 1)"
+            id="path21-5" @click="handleClick('110')"
             inkscape:label="path21" /><path
             style="fill:#0CD464;fill-opacity:0.5;stroke:#000000;stroke-width:1.82002;stroke-dasharray:none;stroke-dashoffset:0"
             d="m 523.08552,168.70846 h 110.76462 l -2.92641,125.10402 -109.8867,-0.29264 z"
-            id="path21-8" @click="handleClick('113', 0, 1)"
+            id="path21-8" @click="handleClick('113')"
             inkscape:label="path21" /><path
             style="fill:#0CD464;fill-opacity:0.5;stroke:#000000;stroke-width:1.82881;stroke-dasharray:none;stroke-dashoffset:0"
             d="M 633.89826,169.89029 H 745.74387 L 742.7889,294.98541 631.82977,294.6928 Z"
-            id="path21-1" @click="handleClick('114', 0, 1)"
+            id="path21-1" @click="handleClick('114')"
             inkscape:label="path21" /><path
             style="fill:#0CD464;fill-opacity:0.5;stroke:#000000;stroke-width:1.89557;stroke-dasharray:none;stroke-dashoffset:0"
             d="M 745.08101,169.25406 H 865.30567 L 862.12933,294.2817 742.85757,293.98924 Z"
-            id="path21-6" @click="handleClick('115', 0, 1)"
+            id="path21-6" @click="handleClick('115')"
             inkscape:label="path21" /><path
             style="fill:#0CD464;fill-opacity:0.5;stroke:#000000;stroke-width:1.86142;stroke-dasharray:none;stroke-dashoffset:0"
             d="m 865.6472,168.72938 h 115.89971 l -3.06208,125.06218 -114.98108,-0.29254 z"
-            id="path21-4" @click="handleClick('116', 0, 1)"
+            id="path21-4" @click="handleClick('116')"
             inkscape:label="path21" /><path
             style="fill:#0CD464;fill-opacity:0.5;stroke:#000000;stroke-width:1.82002;stroke-dasharray:none;stroke-dashoffset:0"
             d="m 981.86952,169.10092 h 110.76458 l -2.9264,125.10402 -109.88667,-0.29264 z"
-            id="path21-64" @click="handleClick('117', 0, 1)"
+            id="path21-64" @click="handleClick('117')"
             inkscape:label="path21" /><path
             style="fill:#0CD464;fill-opacity:0.5;stroke:#000000;stroke-width:1.82002;stroke-dasharray:none;stroke-dashoffset:0"
             d="m 1092.5428,168.316 h 110.7646 l -2.9264,125.10402 -109.8867,-0.29264 z"
-            id="path21-7" @click="handleClick('118', 0, 1)"
+            id="path21-7" @click="handleClick('118')"
             inkscape:label="path21" /><path
             style="fill:#0CD464;fill-opacity:0.5;stroke:#000000;stroke-width:1.82002;stroke-dasharray:none;stroke-dashoffset:0"
             d="m 1204.001,168.70847 h 110.7646 l -2.9264,125.10402 -109.8867,-0.29264 z"
-            id="path21-18" @click="handleClick('119', 0, 1)"
+            id="path21-18" @click="handleClick('119')"
             inkscape:label="path21" /><path
             style="fill:#0CD464;fill-opacity:0.5;stroke:#000000;stroke-width:1.83191;stroke-dasharray:none;stroke-dashoffset:0"
             d="m 300.17487,167.44174 h 110.75282 l -2.92609,126.75729 -109.875,-0.29651 z"
-            id="path21-56" @click="handleClick('111', 0, 1)"
+            id="path21-56" @click="handleClick('111')"
             inkscape:label="path21" /><path
             style="fill:#0CD464;fill-opacity:0.5;stroke:#000000;stroke-width:1.82002;stroke-dasharray:none;stroke-dashoffset:0"
             d="m 411.23484,168.70846 h 110.76462 l -2.92641,125.10402 -109.8867,-0.29264 z"
-            id="path21-50" @click="handleClick('112', 0, 1)"
+            id="path21-50" @click="handleClick('112')"
             inkscape:label="path21" /><path
             style="fill:#0CD464;fill-opacity:0.5;stroke:#000000;stroke-width:1.83975;stroke-dasharray:none;stroke-dashoffset:0"
             d="m 629.49684,295.09008 h 113.19691 l -2.99067,125.08408 -112.29971,-0.29259 z"
-            id="path21-58" @click="handleClick('113', 0, 1)"
+            id="path21-58" @click="handleClick('113')"
             inkscape:label="path21" /><path
             style="fill:#0CD464;fill-opacity:0.5;stroke:#000000;stroke-width:1.82002;stroke-dasharray:none;stroke-dashoffset:0"
             d="m 519.45806,293.97418 h 110.76462 l -2.92641,125.10402 -109.8867,-0.29264 z"
-            id="path21-9" @click="handleClick('106', 0, 1)"
+            id="path21-9" @click="handleClick('106')"
             inkscape:label="path21" /><path
             style="fill:#0CD464;fill-opacity:0.5;stroke:#000000;stroke-width:1.82002;stroke-dasharray:none;stroke-dashoffset:0"
             d="m 408.73154,294.02469 h 110.76462 l -2.92641,125.10402 -109.8867,-0.29264 z"
-            id="path21-47" @click="handleClick('105', 0, 1)"
+            id="path21-47" @click="handleClick('105')"
             inkscape:label="path21" /><path
             style="fill:#0CD464;fill-opacity:0.5;stroke:#000000;stroke-width:1.82399;stroke-dasharray:none;stroke-dashoffset:0"
             d="m 298.00695,292.84927 h 110.76068 l -2.9263,125.65511 -109.88279,-0.29393 z"
-            id="path21-2"  @click="handleClick('104', 0, 1)"
+            id="path21-2"  @click="handleClick('104')"
             inkscape:label="path21" /><path
             style="fill:#0CD464;fill-opacity:0.5;stroke:#000000;stroke-width:1.82002;stroke-dasharray:none;stroke-dashoffset:0"
             d="M 186.72348,293.40233 H 297.4881 l -2.92641,125.10402 -109.8867,-0.29264 z"
-            id="path21-3"  @click="handleClick('103', 0, 1)"
+            id="path21-3"  @click="handleClick('103')"
             inkscape:label="path21" /><path
             style="fill:#0CD464;fill-opacity:0.5;stroke:#000000;stroke-width:1.82002;stroke-dasharray:none;stroke-dashoffset:0"
             d="M 75.682815,293.78778 H 186.44744 L 183.52103,418.8918 73.634325,418.59916 Z"
-            id="path21-29"  @click="handleClick('102', 0, 1)"
+            id="path21-29"  @click="handleClick('102')"
             inkscape:label="path21" /></g>
         </svg>
       </div>
 
-      <b-card  style="max-width: 1200px;" class="card-rounder mt-3" v-if="mostrarLibre" :title="'Esquema y plan de compra '+lote" >
+      <b-card  style="max-width: 1200px;" class="card-rounder mt-3 card-border-success" v-if="mostrarLibre" :title="'Esquema y plan de compra '+lote" >
         <b-card-text>
           <b-row>
             <b-col lg="4" sm="6">
               <p>
-                largo x ancho: <br><strong> 8m x 16m</strong>
+                largo x ancho: <br><strong> {{ textoLxA }}m</strong>
               </p>
             </b-col>
             <b-col lg="4" sm="6">
               <p>
-                M<sup>2</sup> Lote:<br> <strong>128m<sup>2</sup></strong>
+                M<sup>2</sup> Lote:<br> <strong>{{ formattedNumber(area) }}m<sup>2</sup></strong>
               </p>
             </b-col>
             <b-col lg="4" sm="6">
               <p >
-                Exedente: <br> <strong v-if="execente>0"> {{execente}}m<sup>2</sup></strong>
+                Exedente: <br> <strong> {{ formattedNumber(datos.excedente) }}m<sup>2</sup></strong>
               </p>
             </b-col>
             <b-col lg="4" sm="6">
               <p >
-                total: <br> <strong v-if="execente>0"> {{128+execente}}m<sup>2</sup></strong> <strong v-else> 128m<sup>2</sup></strong>
+                total: <br> <strong> {{ formattedNumber(areaTotal) }}m<sup>2</sup></strong>
               </p>
             </b-col>
             <b-col lg="4" sm="6">
               <p>
-                Importe apartado <br> <strong>$ 15,000.00</strong>
+                Importe apartado <br> <strong>$ {{ formattedNumber(importeApartado) }}</strong>
               </p>
             </b-col>
             <b-col lg="4" sm="6">
@@ -822,101 +822,132 @@
             </b-col>
             <b-col lg="4" sm="6">
               <p>
-                Precio por m<sup>2</sup> <strong> $ 5,250.00</strong>
+                Precio por m<sup>2</sup> <strong> $ {{ formattedNumber(precioXM) }}</strong>
               </p>
             </b-col>
           </b-row>
         </b-card-text>
-        <vs-select label-placeholder="Plan de Compra" v-model="planPago" class="margin-top1 mb-4">
-          <vs-option label="contado" value="1">
-            contado
-          </vs-option>
-          <vs-option label="credito" value="2">
-            credito
-          </vs-option>
-        </vs-select>
+        <div class="center con-selects mb-4 w-25">
+          <label for="Plan de Compra">Plan de Compra</label>
+          <v-select 
+            v-model="planPago" 
+            :options="planCompra" 
+            :reduce="option => option.value"
+            label="label" 
+            placeholder="--Selecciona una opcion--"
+            :searchable="true"
+            no-results-text="No se encontraron resultados" 
+
+          />
+        </div>
         <b-row>
           <b-col cols="12">
-            <b-card class="mt-3" title="contado" v-if="planPago == '1'">
+            <b-card class="mt-3" title="contado" v-if="planPago == '2'">
               <b-row>
                 <b-col lg="4" sm="6">
+                  <label for="Enganche">Enganche</label>
+                  <v-select 
+                    v-model="enganche" 
+                    :options="montosEnganche" 
+                    :reduce="option => option.value"
+                    label="label" 
+                    placeholder="--Selecciona una opcion--"
+                    :searchable="true"
+                    no-results-text="No se encontraron resultados" 
+
+                  />
+                </b-col>
+                <b-col lg="4" sm="6">
                   <p>
-                    Precio Lista: <br><strong> $ {{ formattedNumber(montoLista) }} </strong>
+                    Precio Lista: <br><strong> $ {{ formattedNumber(datos.precio*areaTotal) }} </strong>
                   </p>
                 </b-col>
                 <b-col lg="4" sm="6">
                   <p>
-                    Descuento: <br><strong> 20% </strong>
+                    Descuento: <br><strong> {{  datos.descuento  }}% </strong>
                   </p>
                 </b-col>
                 <b-col lg="4" sm="6">
                   <p>
-                    Total Descuento: <br><strong> $ {{ formattedNumber(montoLista*.20) }} </strong>
+                    Total Descuento: <br><strong> $ {{ formattedNumber( (datos.precio*areaTotal)*(datos.descuento/100) ) }} </strong>
                   </p>
                 </b-col>
                 <b-col lg="4" sm="6">
-                    <p>Importe Enganche: <br><strong> $ 285,000.00 </strong></p>
+                    <p>Total pagos: <br><strong> $ {{ formattedNumber(parseFloat(importeApartado) + parseFloat(enganche)) }} </strong></p>
                 </b-col>
                 <b-col lg="4" sm="6">
-                    <p>Total pagos: <br><strong> $ 300,000.00 </strong></p>
-                </b-col>
-                <b-col lg="4" sm="6">
-                    <p>Pago al escriturar: <br><strong> $ {{ formattedNumber( (montoLista-(montoLista*.20))-300000) }} </strong></p>
+                    <p>Pago al escriturar: <br><strong> $ {{ formattedNumber( (datos.precio*areaTotal) - ((datos.precio*areaTotal)*(datos.descuento/100))-(parseFloat(importeApartado) + parseFloat(enganche)) ) }} </strong></p>
                 </b-col>
   
               </b-row>
               <b-card-text class="float-end">
-                <p>Precio Total: <br><strong> $ {{ formattedNumber(montoLista-(montoLista*.20)) }} </strong></p>
+                <p>Precio Total: <br><strong> $ {{ formattedNumber( (datos.precio*areaTotal) - ((datos.precio*areaTotal)*(datos.descuento/100)) ) }} </strong></p>
               </b-card-text>
-  
+              <vs-button
+                block
+              >
+                <box-icon name='log-in-circle' color="#fff"></box-icon> Iniciar
+              </vs-button>
             </b-card>
-            <b-card title="credito" v-if="planPago == '2'">
+            <b-card title="credito" v-if="planPago == '1'">
               <b-row>
                 <b-col lg="4" sm="6">
-                  <p>
-                    Precio Lista: <br><strong> $ {{ formattedNumber(montoLista) }} </strong>
-                  </p>
+                  <label for="Enganche">Enganche</label>
+                  <v-select 
+                    v-model="enganche" 
+                    :options="montosEnganche" 
+                    :reduce="option => option.value"
+                    label="label" 
+                    placeholder="--Selecciona una opcion--"
+                    :searchable="true"
+                    no-results-text="No se encontraron resultados" 
+
+                  />
                 </b-col>
                 <b-col lg="4" sm="6">
                   <p>
-                    Descuento: <br><strong> 9% </strong>
+                    Precio Lista: <br><strong> $ {{ formattedNumber(datos.precio*areaTotal) }} </strong>
                   </p>
                 </b-col>
                 <b-col lg="4" sm="6">
-                  <p>
-                    Total Descuento: <br><strong> $ {{ formattedNumber(montoLista*.09) }} </strong>
+                  <p >
+                    Descuento: <br><strong v-if="enganche == '285000.00'"> 9% </strong><strong v-else> 4% </strong>
+                  </p>
+                </b-col>
+                <b-col lg="4" sm="6">
+                  <p >
+                    Total Descuento: <br><strong v-if="enganche == '285000.00'"> $ {{ formattedNumber( (datos.precio*areaTotal)*(9/100) ) }} </strong> <strong v-else> $ {{ formattedNumber( (datos.precio*areaTotal)*(4/100) ) }} </strong>
                   </p>
                 </b-col>
                 
                 <b-col lg="4" sm="6">
-                  <p>
-                    Precio Total: <br><strong> $ {{ formattedNumber(montoLista-(montoLista*.09)) }} </strong>
+                  <p >
+                    Precio Total: <br><strong v-if="enganche == '285000.00'"> $ {{ formattedNumber( (datos.precio*areaTotal) - ((datos.precio*areaTotal)*(4/100)) ) }} </strong> <strong v-else> $ {{ formattedNumber( (datos.precio*areaTotal) - ((datos.precio*areaTotal)*(4/100)) ) }} </strong>
                   </p>
                 </b-col>
                 
-                <b-col lg="4" sm="6">
-                  <p>
-                    Importe Enganche: <br><strong> $ 285,000.00</strong>
-                  </p>
-                </b-col>
+                
                 <b-col lg="4" sm="6">
                   <p>
                     Mensualidades: <br><strong> 21 </strong>
                   </p>
                 </b-col>
                 <b-col lg="4" sm="6">
-                  <p>
-                    Total pagos: <br><strong>$ 510,000.00 </strong>
-                  </p>
+                  <p>Total pagos: <br><strong> $ {{ formattedNumber(parseFloat(importeApartado) + parseFloat(enganche)) }} </strong></p>
+                </b-col>
+
+                <b-col lg="4" sm="6">
+                  <p>Total Mensualidades: <br><strong> $ {{ formattedNumber(sumaTotalTabla) }} </strong></p>
                 </b-col>
                 
                 <b-col lg="4" sm="6">
+                  
                   <p>
-                    Pagos al escriturar: <br><strong>$ 101,620.00 </strong>
+                      Pago al escriturar: <br><strong v-if="enganche == '285000.00'"> $ {{ formattedNumber( ((datos.precio*areaTotal) - ((datos.precio*areaTotal)*(9/100))) - (parseFloat(importeApartado) + parseFloat(enganche) +   parseFloat(sumaTotalTabla)) ) }} </strong> <strong v-else> $ {{ formattedNumber( ((datos.precio*areaTotal) - ((datos.precio*areaTotal)*(4/100))) -(parseFloat(importeApartado) + parseFloat(enganche) + parseFloat(sumaTotalTabla)) ) }} </strong>
                   </p>
                 </b-col>
               </b-row>
-              <vs-table>
+              <vs-table v-if="mostrarTabla">
                 <template #header>
                   <vs-input v-model="search" border placeholder="Buscar" />
                 </template>
@@ -943,10 +974,10 @@
                       {{ tr.mensualidad }}
                     </vs-td>
                     <vs-td>
-                    {{ tr.fecha }}
+                      {{ tr.fecha }}
                     </vs-td>
                     <vs-td>
-                    {{ tr.importe }}
+                      {{ tr.importe }}
                     </vs-td>
                   </vs-tr>
                 </template>
@@ -954,18 +985,18 @@
                   <vs-pagination v-model="page" :length="$vs.getLength($vs.getSearch(dates, search), max)" />
                 </template>
               </vs-table>
+              <vs-button
+                block
+              >
+                <box-icon name='log-in-circle' color="#fff"></box-icon> Iniciar
+              </vs-button>
             </b-card>
+            
           </b-col>
         </b-row>
       </b-card>
-  
-      <b-card style="max-width: 540px;" class="card-rounder" v-if="mostrarApartado" title="apartado por Erick MAdrigal Flores" sub-title="area 1">
-        <b-card-text>
-          fecha de apartado 29 de julio del 2024
-        </b-card-text>
-  
-        <b-card-text>apartago por $150,000.00 <br> precio total $250,000.00</b-card-text>
-      </b-card>
+      <cardEstatusComponent v-if="mostrarApartado" />
+      
     </b-container>
 
 
@@ -973,13 +1004,17 @@
 </template>
 
 <script>
+import { fetchApi } from "@/service/service.js"
 import { openNotification } from "@/utils/notification.js"
 import { EventBus } from '@/utils/eventBus.js';
-import numeral from 'numeral';
+import cardEstatusComponent from '@/components/cardEstatus.vue';
+import numberMixin from '@/mixins/numberMixin';
 
 export default {
+  mixins: [numberMixin],
   name: "Area1Component",
   components: {
+    cardEstatusComponent
   },
   data:() => ({
     search: '',
@@ -1059,8 +1094,10 @@ export default {
     ],
     dates: [],
 
+    mostrarTabla: false,
+    sumaTotalTabla: 0,
+
     planPago: '',
-    active: false,
     isPuffed: true,
     mostrarApartado: false,
     mostrarLibre: false,
@@ -1068,6 +1105,24 @@ export default {
     lote: '',
     execente: 0, 
     montoLista: 0,
+    apiUrl: process.env.VUE_APP_API_URL,
+    datos: {},
+
+    montosEnganche: [],
+    planCompra: [],
+    estatus:[],
+
+    textoLxA: '',
+    area: 0,
+    areaTotal: 0,
+    importeApartado: 15000, 
+    precioXM: 0, 
+    enganche: 0,
+
+    titleAdquiridp: '',
+
+    
+
   }),
   computed: {
     formattedDate() {
@@ -1079,51 +1134,115 @@ export default {
       });
     }
   },
+  watch: {
+    enganche() {
+      this.generateDates();
+      this.mostrarTabla = true;
+    },
+    planPago(){
+      this.mostrarTabla = false;
+      this.sumaTotalTabla = 0;
+    }
+  },
   mounted() {
-    this.generateDates();
+    this.getEnganche();
+    this.getPlanCompra();
   },
   methods: {
-    handleClick(lote, execente = 0, tipoUso = 0) {
-      this.mostrarLibre = true;
-      if(tipoUso == 1){
+    handleClick(lote) {
+      fetchApi(this.apiUrl+'lotes/'+lote, 'GET')
+      .then(data => {
+        this.datos = data  
+      })
+      this.textoLxA = this.datos.ancho+'m x '+ this.datos.largo+'m';
+      
+      this.area = this.datos.ancho*this.datos.largo;
+      
+      this.precioXM = this.datos.precio;
+      
+      this.areaTotal = parseFloat(this.area)+parseFloat(this.datos.excedente);
+
+      
+      if(this.datos.id_estatus == 5 ){
         this.lote = "Lote "+lote;
-        this.execente = execente;
-        let areaTotal = 128;
-        if(execente > 0){
-          areaTotal = 128 + execente;
-        }
-
-        this.montoLista = 5250*areaTotal;
-        // if(this.planPago == "1"){
-
-        // }
-        // if(this.planPago == "2"){
-
-        // } 
-      }else if (tipoUso == 2){
-          this.notifySuccess();
-      }else if (tipoUso == 3){
-        this.notify();
+        this.mostrarLibre = true;
+        this.mostrarApartado = false
       }
+      if(this.datos.id_estatus == 6 ){
+          this.mostrarLibre = false;
+          this.mostrarApartado = true;
+          let datos = this.datos;
+
+          datos.area = "Area-1";
+          
+          this.$store.commit('setCardEstatusDatos', datos);
+
+          this.notifyError('warning', 'Lote apartado', 'este lote esta apartado por')
+      }
+      if(this.datos.id_estatus == 7 ){
+        this.notifyError('danger', 'Lote vendido', 'este lote esta vendido')
+      }
+      // if(tipoUso == 1){
+      //   this.lote = "Lote "+lote;
+      //   this.execente = execente;
+      //   let areaTotal = 128;
+      //   if(execente > 0){
+      //     areaTotal = 128 + execente;
+      //   }
+
+      //   this.montoLista = 5250*areaTotal;
+      //   // if(this.planPago == "1"){
+
+      //   // }
+      //   // if(this.planPago == "2"){
+
+      //   // } 
+      // }else if (tipoUso == 2){
+      //     this.notifySuccess();
+      // }else if (tipoUso == 3){
+      //   this.notify();
+      // }
 
     },
     activateModal() {
       EventBus.$emit('activate-modal');
     },
-    notify() {
+    notifyError(color, title, text) {
       this.mostrarApartado = true;
       this.mostrarLibre = false;
 
-      openNotification(this, 'top-center', 'danger');
+      openNotification(this, 'top-center', color, title, text);
     },
-    notifySuccess() {
+    notifySuccess(title, text) {
       this.mostrarLibre = true;
       this.mostrarApartado = false;
 
-      openNotification(this, 'top-center', 'primary');
+      openNotification(this, 'top-center', 'primary', title, text);
     },
-    formattedNumber(number) {
-      return numeral(number).format('0,0.00');
+    getEstatus(){
+      fetchApi(this.apiUrl+'catalogos/?tipo_catalogo=estatus', 'GET')
+      .then(data => {
+        this.estatus = data
+      })
+    },
+    getEnganche(){
+      fetchApi(this.apiUrl+'catalogos/?tipo_catalogo=precio_enganche', 'GET')
+      .then(data => {
+        this.montosEnganche = data.map(item => ({
+          value: item.valor_numero,
+          label: this.formattedNumber(item.valor_numero)
+        }));    
+      })
+    },
+    
+    getPlanCompra(){
+      fetchApi(this.apiUrl+'catalogos/?tipo_catalogo=plan_compra', 'GET')
+      .then(data => {
+        this.planCompra = data.map(item => ({
+          value: item.id,
+          label: item.valor_text
+        }));   
+      })
     },
     generateDates() {
       const dates = [];
@@ -1135,13 +1254,21 @@ export default {
           id: i,
           mensualidad: "Mensualidad " + (i+1),
           fecha: newDate.toLocaleDateString(),
-          importe: "10,000.00"
+          importe: "00.00",
         }
+        if(this.enganche == '285000.00'){
+          pagos.importe = "10,000.00" 
+          this.sumaTotalTabla = "210000.00" 
+        }else{
+          pagos.importe = "13,500.00" 
+          this.sumaTotalTabla = "283500.00" 
+        }
+        
         dates.push(pagos);
       }
       this.dates = dates;
     },
-    }
+  }
     
     
 }

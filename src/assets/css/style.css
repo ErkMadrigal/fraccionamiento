@@ -29,6 +29,12 @@ html, body {
         }
 }
 
+.custom-badge {
+        font-size: initial; /* Restablece el tamaño de la fuente */
+        color: initial; /* Restablece el color de la fuente */
+        /* Añade más estilos según sea necesario */
+}
+
 .margin-top{
         margin-top: 6rem;
 }
@@ -45,6 +51,22 @@ html, body {
         border-radius: 1rem !important;
         margin: 0.5rem;
         box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card-border-danger{
+        border-left: 5px solid #dc3545 !important;
+}
+
+.card-border-warning{
+        border-left: 5px solid #ffc107 !important;
+}
+
+.card-border-success{
+        border-left: 5px solid #28a745 !important;
+}
+
+.card-border-primary{
+        border-left: 5px solid #007bff !important;
 }
 
 .puff-out-center {

@@ -1868,6 +1868,7 @@ export default {
         this.isPuffed = !this.isPuffed;
         // EventBus.$emit('activate-modal');
         this.$root.$emit('bv::show::modal', 'modal-xl');
+
       }
     },
     indicated(id){

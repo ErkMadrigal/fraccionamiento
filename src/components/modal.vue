@@ -9,19 +9,6 @@
           <Area7Component v-if="vista == 'Area7Component'"/>
           <Area8Component v-if="vista == 'Area8Component'"/> -->
 
-        <template #modal-footer>
-            <div class="w-100">
-            
-            <b-button
-                variant="primary"
-                size="sm"
-                class="float-right"
-                @click="notifySuccess"
-            >
-                Iniciar
-            </b-button>
-            </div>
-      </template>
     </b-modal>
 </template>
   
@@ -49,9 +36,9 @@
         // Area8Component,
         },
         props: {
-        vista: {
-            type: String,
-        },
+            vista: {
+                type: String,
+            },
         },
         data:() => ({
         }),
@@ -61,12 +48,19 @@
             }
         },
         mounted() {
-        this.$root.$on('bv::show::modal', this.showModal);
+            this.$root.$on('bv::show::modal', this.showModal);
         },
         beforeDestroy() {
-        this.$root.$off('bv::show::modal', this.showModal);
+            this.$root.$off('bv::show::modal', this.showModal);
         },
         methods: {
+            showModal(modalId) {
+                if (!this.isShowingModal && modalId === 'modal-xl') {
+                    this.isShowingModal = true;
+                    this.$bvModal.show(modalId);
+                    this.isShowingModal = false;
+                }
+            },
             notifySuccess() {
                 this.mostrarLibre = true;
                 this.mostrarApartado = false;
@@ -79,11 +73,6 @@
 
                 openNotification(this, 'top-center', 'danger', 'Area Apartada', 'Esta area ya se encuentra apartada intenta con las areas en verde');
             },
-            showModal(modalId) {
-                if (modalId === 'modal-xl') {
-                this.$bvModal.show(modalId);
-                }
-            }
         }
     }
 </script>

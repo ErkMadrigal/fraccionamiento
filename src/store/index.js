@@ -5,10 +5,14 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    cardEstatusDatos: {}
   },
   getters: {
   },
   mutations: {
+    setCardEstatusDatos(state, datos) {
+      state.cardEstatusDatos = datos;
+    }
   },
   actions: {
   },
