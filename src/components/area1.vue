@@ -797,7 +797,7 @@
             </b-col>
             <b-col lg="4" sm="6">
               <p>
-                M<sup>2</sup> Lote:<br> <strong>{{ formattedNumber(area) }}m<sup>2</sup></strong>
+                M<sup>2</sup> Lote:<br> <strong>{{ formattedNumber(datos.area) }}m<sup>2</sup></strong>
               </p>
             </b-col>
             <b-col lg="4" sm="6">
@@ -807,7 +807,7 @@
             </b-col>
             <b-col lg="4" sm="6">
               <p >
-                total: <br> <strong> {{ formattedNumber(areaTotal) }}m<sup>2</sup></strong>
+                total: <br> <strong> {{ formattedNumber(datos.area_con_excedente) }}m<sup>2</sup></strong>
               </p>
             </b-col>
             <b-col lg="4" sm="6">
@@ -822,7 +822,7 @@
             </b-col>
             <b-col lg="4" sm="6">
               <p>
-                Precio por m<sup>2</sup> <strong> $ {{ formattedNumber(precioXM) }}</strong>
+                Precio por m<sup>2</sup> <strong> $ {{ formattedNumber(datos.precio) }}</strong>
               </p>
             </b-col>
           </b-row>
@@ -885,6 +885,7 @@
               </b-card-text>
               <vs-button
                 block
+                @click="enviarDatos(datos, enganche, planPago, 0)"
               >
                 <box-icon name='log-in-circle' color="#fff"></box-icon> Iniciar
               </vs-button>
@@ -906,7 +907,7 @@
                 </b-col>
                 <b-col lg="4" sm="6">
                   <p>
-                    Precio Lista: <br><strong> $ {{ formattedNumber(datos.precio*areaTotal) }} </strong>
+                    Precio Lista: <br><strong> $ {{ formattedNumber(datos.precio*datos.areaTotal) }} </strong>
                   </p>
                 </b-col>
                 <b-col lg="4" sm="6">
@@ -916,13 +917,13 @@
                 </b-col>
                 <b-col lg="4" sm="6">
                   <p >
-                    Total Descuento: <br><strong v-if="enganche == '285000.00'"> $ {{ formattedNumber( (datos.precio*areaTotal)*(9/100) ) }} </strong> <strong v-else> $ {{ formattedNumber( (datos.precio*areaTotal)*(4/100) ) }} </strong>
+                    Total Descuento: <br><strong v-if="enganche == '285000.00'"> $ {{ formattedNumber( (datos.precio*datos.areaTotal)*(9/100) ) }} </strong> <strong v-else> $ {{ formattedNumber( (datos.precio*datos.areaTotal)*(4/100) ) }} </strong>
                   </p>
                 </b-col>
                 
                 <b-col lg="4" sm="6">
                   <p >
-                    Precio Total: <br><strong v-if="enganche == '285000.00'"> $ {{ formattedNumber( (datos.precio*areaTotal) - ((datos.precio*areaTotal)*(4/100)) ) }} </strong> <strong v-else> $ {{ formattedNumber( (datos.precio*areaTotal) - ((datos.precio*areaTotal)*(4/100)) ) }} </strong>
+                    Precio Total: <br><strong v-if="enganche == '285000.00'"> $ {{ formattedNumber( (datos.precio*datos.areaTotal) - ((datos.precio*datos.areaTotal)*(9/100)) ) }} </strong> <strong v-else> $ {{ formattedNumber( (datos.precio*datos.areaTotal) - ((datos.precio*datos.areaTotal)*(4/100)) ) }} </strong>
                   </p>
                 </b-col>
                 
@@ -943,7 +944,7 @@
                 <b-col lg="4" sm="6">
                   
                   <p>
-                      Pago al escriturar: <br><strong v-if="enganche == '285000.00'"> $ {{ formattedNumber( ((datos.precio*areaTotal) - ((datos.precio*areaTotal)*(9/100))) - (parseFloat(importeApartado) + parseFloat(enganche) +   parseFloat(sumaTotalTabla)) ) }} </strong> <strong v-else> $ {{ formattedNumber( ((datos.precio*areaTotal) - ((datos.precio*areaTotal)*(4/100))) -(parseFloat(importeApartado) + parseFloat(enganche) + parseFloat(sumaTotalTabla)) ) }} </strong>
+                      Pago al escriturar: <br><strong v-if="enganche == '285000.00'"> $ {{ formattedNumber( ((datos.precio*datos.areaTotal) - ((datos.precio*datos.areaTotal)*(9/100))) - (parseFloat(importeApartado) + parseFloat(enganche) +   parseFloat(sumaTotalTabla)) ) }} </strong> <strong v-else> $ {{ formattedNumber( ((datos.precio*datos.areaTotal) - ((datos.precio*datos.areaTotal)*(4/100))) -(parseFloat(importeApartado) + parseFloat(enganche) + parseFloat(sumaTotalTabla)) ) }} </strong>
                   </p>
                 </b-col>
               </b-row>
@@ -987,6 +988,7 @@
               </vs-table>
               <vs-button
                 block
+                @click="enviarDatos(datos, enganche, planPago, sumaTotalTabla)"
               >
                 <box-icon name='log-in-circle' color="#fff"></box-icon> Iniciar
               </vs-button>
@@ -1009,6 +1011,7 @@ import { openNotification } from "@/utils/notification.js"
 import { EventBus } from '@/utils/eventBus.js';
 import cardEstatusComponent from '@/components/cardEstatus.vue';
 import numberMixin from '@/mixins/numberMixin';
+import { mapActions } from 'vuex';
 
 export default {
   mixins: [numberMixin],
@@ -1113,10 +1116,7 @@ export default {
     estatus:[],
 
     textoLxA: '',
-    area: 0,
-    areaTotal: 0,
     importeApartado: 15000, 
-    precioXM: 0, 
     enganche: 0,
 
     titleAdquiridp: '',
@@ -1154,14 +1154,9 @@ export default {
       .then(data => {
         this.datos = data  
       })
-      this.textoLxA = this.datos.ancho+'m x '+ this.datos.largo+'m';
-      
-      this.area = this.datos.ancho*this.datos.largo;
-      
-      this.precioXM = this.datos.precio;
-      
-      this.areaTotal = parseFloat(this.area)+parseFloat(this.datos.excedente);
 
+      console.log(this.datos)
+      this.textoLxA = this.datos.ancho+'m x '+ this.datos.largo+'m';
       
       if(this.datos.id_estatus == 5 ){
         this.lote = "Lote "+lote;
@@ -1182,43 +1177,27 @@ export default {
       if(this.datos.id_estatus == 7 ){
         this.notifyError('danger', 'Lote vendido', 'este lote esta vendido')
       }
-      // if(tipoUso == 1){
-      //   this.lote = "Lote "+lote;
-      //   this.execente = execente;
-      //   let areaTotal = 128;
-      //   if(execente > 0){
-      //     areaTotal = 128 + execente;
-      //   }
+    
 
-      //   this.montoLista = 5250*areaTotal;
-      //   // if(this.planPago == "1"){
-
-      //   // }
-      //   // if(this.planPago == "2"){
-
-      //   // } 
-      // }else if (tipoUso == 2){
-      //     this.notifySuccess();
-      // }else if (tipoUso == 3){
-      //   this.notify();
-      // }
-
+    },
+    ...mapActions(['updateDatos']),
+    enviarDatos(dataAPi, enganche, planPagos, sumaTotalTabla){
+      if(enganche != 0){
+        const datos = { dataAPi, enganche, planPagos, sumaTotalTabla };
+        this.updateDatos(datos);
+        this.$router.push({ name: 'Cotizador' });
+      }else{
+        this.notify('danger', 'Error al obtener la cotizacion', 'es requerido seleccionar el enganche')
+      }
     },
     activateModal() {
       EventBus.$emit('activate-modal');
     },
-    notifyError(color, title, text) {
-      this.mostrarApartado = true;
-      this.mostrarLibre = false;
+    notify(color, title, text) {
 
       openNotification(this, 'top-center', color, title, text);
     },
-    notifySuccess(title, text) {
-      this.mostrarLibre = true;
-      this.mostrarApartado = false;
-
-      openNotification(this, 'top-center', 'primary', title, text);
-    },
+    
     getEstatus(){
       fetchApi(this.apiUrl+'catalogos/?tipo_catalogo=estatus', 'GET')
       .then(data => {
