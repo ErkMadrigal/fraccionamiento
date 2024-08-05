@@ -11,6 +11,12 @@ const routes = [
     component: HomeView
   },
   {
+    path: '/Mapa',
+    name: 'Mapa',
+    component: () => import('../views/MapaView.vue')
+  },
+  
+  {
     path: '/Cotizador',
     name: 'Cotizador',
     component: () => import('../views/CotizadorView.vue')

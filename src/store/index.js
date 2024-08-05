@@ -6,10 +6,13 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     cardEstatusDatos: {},
-    datos: null
+    datos: null,
+    fechas: []
   },
   getters: {
-    getDatos: state => state.datos
+    getDatos: state => state.datos,
+    getFechas: state => state.fechas
+
   },
   mutations: {
     setCardEstatusDatos(state, datos) {
@@ -17,6 +20,12 @@ export default new Vuex.Store({
     },
     setDatos(state, payload) {
       state.datos = payload;
+    },
+    setFechas(state, fechas) {
+      state.fechas = fechas;
+    },
+    updateFechas({ commit }, fechas) {
+      commit('setFechas', fechas);
     }
   },
   actions: {

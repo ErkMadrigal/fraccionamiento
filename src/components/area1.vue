@@ -885,7 +885,7 @@
               </b-card-text>
               <vs-button
                 block
-                @click="enviarDatos(datos, enganche, planPago, 0)"
+                @click="enviarDatos(datos, enganche, planPago, 0, false)"
               >
                 <box-icon name='log-in-circle' color="#fff"></box-icon> Iniciar
               </vs-button>
@@ -988,7 +988,7 @@
               </vs-table>
               <vs-button
                 block
-                @click="enviarDatos(datos, enganche, planPago, sumaTotalTabla)"
+                @click="enviarDatos(datos, enganche, planPago, sumaTotalTabla, true)"
               >
                 <box-icon name='log-in-circle' color="#fff"></box-icon> Iniciar
               </vs-button>
@@ -1023,78 +1023,7 @@ export default {
     search: '',
     page: 1,
     max: 7,
-    users: [
-      {
-        "id": 1,
-        "name": "Leanne Graham",
-        "username": "Bret",
-        "email": "Sincere@april.biz",
-        "website": "hildegard.org",
-      },
-      {
-        "id": 2,
-        "name": "Ervin Howell",
-        "username": "Antonette",
-        "email": "Shanna@melissa.tv",
-        "website": "anastasia.net",
-      },
-      {
-        "id": 3,
-        "name": "Clementine Bauch",
-        "username": "Samantha",
-        "email": "Nathan@yesenia.net",
-        "website": "ramiro.info",
-      },
-      {
-        "id": 4,
-        "name": "Patricia Lebsack",
-        "username": "Karianne",
-        "email": "Julianne.OConner@kory.org",
-        "website": "kale.biz",
-      },
-      {
-        "id": 5,
-        "name": "Chelsey Dietrich",
-        "username": "Kamren",
-        "email": "Lucio_Hettinger@annie.ca",
-        "website": "demarco.info",
-      },
-      {
-        "id": 6,
-        "name": "Mrs. Dennis Schulist",
-        "username": "Leopoldo_Corkery",
-        "email": "Karley_Dach@jasper.info",
-        "website": "ola.org",
-      },
-      {
-        "id": 7,
-        "name": "Kurtis Weissnat",
-        "username": "Elwyn.Skiles",
-        "email": "Telly.Hoeger@billy.biz",
-        "website": "elvis.io",
-      },
-      {
-        "id": 8,
-        "name": "Nicholas Runolfsdottir V",
-        "username": "Maxime_Nienow",
-        "email": "Sherwood@rosamond.me",
-        "website": "jacynthe.com",
-      },
-      {
-        "id": 9,
-        "name": "Glenna Reichert",
-        "username": "Delphine",
-        "email": "Chaim_McDermott@dana.io",
-        "website": "conrad.com",
-      },
-      {
-        "id": 10,
-        "name": "Clementina DuBuque",
-        "username": "Moriah.Stanton",
-        "email": "Rey.Padberg@karina.biz",
-        "website": "ambrose.net",
-      }
-    ],
+    
     dates: [],
 
     mostrarTabla: false,
@@ -1155,7 +1084,6 @@ export default {
         this.datos = data  
       })
 
-      console.log(this.datos)
       this.textoLxA = this.datos.ancho+'m x '+ this.datos.largo+'m';
       
       if(this.datos.id_estatus == 5 ){
@@ -1172,18 +1100,19 @@ export default {
           
           this.$store.commit('setCardEstatusDatos', datos);
 
-          this.notifyError('warning', 'Lote apartado', 'este lote esta apartado por')
+          this.notify('warning', 'Lote apartado', 'este lote esta apartado por')
       }
       if(this.datos.id_estatus == 7 ){
-        this.notifyError('danger', 'Lote vendido', 'este lote esta vendido')
+        this.notify('danger', 'Lote vendido', 'este lote esta vendido')
       }
     
 
     },
     ...mapActions(['updateDatos']),
-    enviarDatos(dataAPi, enganche, planPagos, sumaTotalTabla){
+    enviarDatos(dataAPi, enganche, planPagos, sumaTotalTabla, mostrarTabla){
+
       if(enganche != 0){
-        const datos = { dataAPi, enganche, planPagos, sumaTotalTabla };
+        const datos = { dataAPi, enganche, planPagos, sumaTotalTabla, mostrarTabla };
         this.updateDatos(datos);
         this.$router.push({ name: 'Cotizador' });
       }else{

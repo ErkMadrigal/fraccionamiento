@@ -36,7 +36,7 @@
         :open.sync="activeSidebar"
         >
         <template #logo>
-           <img src="@/assets/img/log.png" alt="logo">
+           <img src="@/assets/img/logo.webp" alt="logo">
         </template>
         <vs-sidebar-item id="home" >
           <template #icon>

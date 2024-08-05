@@ -1,14 +1,9 @@
 <template>
     <div class="Cotizador">
-      <SidebarComponent/>
+      <SidebarComponent class="no-print"/>
       <div class="contenedor">
         <b-row class="margin-top">
           <b-col lg="6" sm="12">
-        <!-- {{ datos.dataAPi }}
-        {{ datos.enganche }}
-        {{ datos.planPagos }}
-        {{ datos.sumaTotalTabla }} -->
-
               <b-card class="card-rounder" title="Datos personales">
                 <b-row>
                   <b-col lg="6" sm="12">
@@ -55,8 +50,7 @@
             <b-card class="card-rounder" :title="tipoCompra">
               <b-row>
                 <b-col lg="3" sm="12">
-                  <!-- <img src="@/assets/mapas/area/svg/lote_108.svg" alt="area108" /> -->
-                  <img src="@/assets/mapas/area/lote_108.png" alt="area108" />
+                  <img style="width: 9rem;" :src="setImagen(this.datos.dataAPi.num_lote)" alt="lotes amanecer" />
                 </b-col>
                 
                 <b-col lg="9" sm="12">
@@ -175,6 +169,60 @@
                 </b-card>
               </b-col>
             </b-row>
+            <b-row class="mt-4">
+              <b-col>
+                <vs-button block  @click="printPage">
+                  <box-icon color="#fff" name='printer' ></box-icon> imprimir
+                </vs-button>
+              </b-col>
+              <b-col>
+                <vs-button block @click="enviarEmail">
+                  <box-icon color="#fff" name='send'></box-icon> Correo
+                </vs-button>
+              </b-col>
+            </b-row>
+          </b-col>
+         
+          <b-col lg="12" sm="12" class="mt-3 card-rounder mb-5" v-if="datos.mostrarTabla">
+            <vs-table>
+              <template #header>
+                <vs-input v-model="search" border placeholder="Buscar" />
+              </template>
+              <template #thead>
+                <vs-tr>
+                  <vs-th sort @click="dates = $vs.sortData($event ,dates, 'mensualidades')">
+                    <box-icon name='credit-card' ></box-icon>
+                  </vs-th>
+                  <vs-th sort @click="dates = $vs.sortData($event ,dates, 'Fecha')">
+                    <box-icon name='calendar' ></box-icon>
+                  </vs-th>
+                  <vs-th sort @click="dates = $vs.sortData($event ,dates, 'importe')">
+                    <box-icon name='money-withdraw' ></box-icon>
+                  </vs-th>
+                </vs-tr>
+              </template>
+              <template #tbody>
+                <vs-tr
+                  :key="i"
+                  v-for="(tr, i) in $vs.getPage($vs.getSearch(dates, search), page, max)"
+                  :data="tr"
+                >
+                  <vs-td>
+                    {{ tr.mensualidad }}
+                  </vs-td>
+                  <vs-td>
+                    {{ tr.fecha }}
+                  </vs-td>
+                  <vs-td>
+                    {{ tr.importe }}
+                  </vs-td>
+                </vs-tr>
+              </template>
+              <template #footer>
+                <vs-pagination v-model="page" :length="$vs.getLength($vs.getSearch(dates, search), max)" />
+              </template>
+            </vs-table>
+            <!-- <tablaNortizacionComponent :fechas="datos.fechas"  /> -->
           </b-col>
         </b-row>
       </div>
@@ -183,8 +231,11 @@
   
   <script>
   import SidebarComponent from '@/components/Sidebar.vue';
-  import { mapGetters } from 'vuex';
+  import { mapGetters,  } from 'vuex';
   import numberMixin from '@/mixins/numberMixin';
+  import { openLoading, openNotification } from "@/utils/notification.js"
+
+  // import tablaNortizacionComponent from '@/components/tablaMortizacion.vue';
 
 
 
@@ -198,15 +249,21 @@
       nombre_ejecutivo: null,
       telefono_ejecutivo: null,
       correo_ejecutivo: null,
+      dates: [],
+      search: '',
+      page: 1,
+      max: 7,
 
       precioTotal: null,
       descuento: null,
       tipoCompra: null,
       totalEscritura: null,
+      
     }),
     
     components: {
       SidebarComponent,
+      // tablaNortizacionComponent
     },
     computed: {
     ...mapGetters(['getDatos']),
@@ -216,9 +273,36 @@
     },
     mounted() {
       this.getPrecioTotal()
-      
+      this.generateDates();
     },
     methods: {
+      printPage() {
+        openLoading(this)
+        this.max = 21
+        setTimeout(() => {
+          window.print();
+        }, 3500);
+        setTimeout(() => {
+          this.max = 7
+        }, 4000);
+      },
+      enviarEmail(){
+        console.log("entre")
+        this.notify('success', 'Correo enviado Con exito', 'Recuerda ver en Spam');
+      },
+      notify(color, title, text) {
+        openNotification(this, 'top-center', color, title, text);
+      },
+      setImagen(id) {
+        const imageMap = {
+          108: require('../assets/mapas/area/lote_108.png'),
+          106: require('../assets/mapas/area/lote_108.png'),
+          120: require('../assets/mapas/area/lote_120.png'),
+          default: require('../assets/mapas/area/lote_128m_gen.png')
+        };
+        return imageMap[id] || imageMap.default;
+      },
+
       getPrecioTotal(){
         
         let descuentoAplicado;
@@ -243,7 +327,29 @@
         this.tipoCompra = 'lote '+this.datos.dataAPi.num_lote + compra
         this.precioTotal = precioTotal - descuentoAplicado;
         this.totalEscritura = this.precioTotal - (parseFloat(this.datos.enganche) + 15000 + parseFloat(this.datos.sumaTotalTabla))
-      }
+      },
+      generateDates() {
+        const dates = [];
+        const today = new Date();
+        for (let i = 0; i < 21; i++) {
+          const newDate = new Date(today);
+          newDate.setMonth(today.getMonth() + i);
+          let pagos = {
+            id: i,
+            mensualidad: "Mensualidad " + (i+1),
+            fecha: newDate.toLocaleDateString(),
+            importe: "00.00",
+          }
+          if(this.datos.enganche == '285000.00'){
+            pagos.importe = "10,000.00" 
+          }else{
+            pagos.importe = "13,500.00" 
+          }
+          
+          dates.push(pagos);
+        }
+        this.dates = dates;
+      },
     }
   
   }
@@ -256,5 +362,15 @@
 .price{
   font-size: 2rem;
   color: #9fa7a4;
+}
+@media print {
+  .no-print {
+    display: none;
+  }
+
+  /* Asegúrate de que la tabla ocupe toda la página */
+  .print-table {
+    width: 100%;
+  }
 }
 </style>

@@ -7,4 +7,10 @@ export const openNotification = (VueInstance, position = 'top-right', color = 'd
       text: text
     });
   };
-  
+
+  export const openLoading = (VueInstance) => {
+    const loading = VueInstance.$vs.loading()
+    setTimeout(() => {
+      loading.close()
+    }, 3000)
+  }
