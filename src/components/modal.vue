@@ -1,13 +1,14 @@
 <template>
     <b-modal scrollable id="modal-xl" size="xl" :title="'Fraccionamiento Amanecer' + titulo">
         <Area1Component v-if="vista == 'Area1Component'"/>
-          <!-- <Area2Component v-if="vista == 'Area2Component'"/>
-          <Area3Component v-if="vista == 'Area3Component'"/>
-          <Area4Component v-if="vista == 'Area4Component'"/>
-          <Area5Component v-if="vista == 'Area5Component'"/>
-          <Area6Component v-if="vista == 'Area6Component'"/>
-          <Area7Component v-if="vista == 'Area7Component'"/>
-          <Area8Component v-if="vista == 'Area8Component'"/> -->
+
+        <!-- <Area2Component v-if="vista == 'Area2Component'"/>
+        <Area3Component v-if="vista == 'Area3Component'"/>
+        <Area4Component v-if="vista == 'Area4Component'"/>
+        <Area5Component v-if="vista == 'Area5Component'"/>
+        <Area6Component v-if="vista == 'Area6Component'"/>
+        <Area7Component v-if="vista == 'Area7Component'"/>
+        <Area8Component v-if="vista == 'Area8Component'"/> -->
 
     </b-modal>
 </template>
@@ -80,5 +81,8 @@
 <style>
 #modal-xl___BV_modal_content_{
     margin-top: 6rem;
+}
+.close{
+    display: none;
 }
 </style>

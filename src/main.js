@@ -9,9 +9,9 @@ import Vuesax from 'vuesax'
 import 'vuesax/dist/vuesax.css'
 import 'boxicons'
 
-import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
+import { BootstrapVue } from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-vue/dist/bootstrap-vue.css';
 
 import vSelect from 'vue-select';
 import 'vue-select/dist/vue-select.css';
@@ -19,13 +19,16 @@ import 'vue-select/dist/vue-select.css';
 
 import VueApexCharts from 'vue-apexcharts'
 
+import Carousel3d from 'vue-carousel-3d';
+
+Vue.use(Carousel3d);
+
 Vue.config.productionTip = false
 
 Vue.use(Vuesax)
 Vue.use(BootstrapVue,{
   locale: 'es'
 })
-Vue.use(IconsPlugin)
 
 Vue.use(VueApexCharts)
 

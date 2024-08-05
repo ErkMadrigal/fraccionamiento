@@ -1655,11 +1655,11 @@
           </vs-button>
 
         </b-col>
-        <b-col lg="12" sm="12" style="margin-top:-20rem">
+        <b-col lg="12" sm="12" style="margin-top:-5rem">
           <b-row  class="margin-top">
               <b-col lg="3" sm="6">
                 <vs-tooltip>
-                  <b-card class="card-rounder" @click="indicated(1)" border-variant="primary" text-variant="white" bg-variant="primary" title="Area Perimetral">
+                  <b-card class="card-rounder card-border-areea1" @click="indicated(1)" title="Area Perimetral">
                     <apexchart-all type="donut" :options="chartOptions" :series="series"></apexchart-all>
                     <b-card-text>
                       lotes disponibles <b-badge pill variant="success">23</b-badge><br>
@@ -1674,7 +1674,7 @@
               </b-col>
               <b-col lg="3" sm="6">
                 <vs-tooltip>
-                  <b-card class="card-rounder" @click="indicated(2)" border-variant="primary" text-variant="white" bg-variant="primary" title="Area Perimetral">
+                  <b-card class="card-rounder card-border-areea1" @click="indicated(2)" title="Area Perimetral">
                     <apexchart-all type="donut" :options="chartOptions" :series="series"></apexchart-all>
                     <b-card-text>
                       lotes disponibles <b-badge pill variant="success">23</b-badge><br>
@@ -1689,7 +1689,7 @@
               </b-col>
               <b-col lg="3" sm="6">
                 <vs-tooltip>
-                  <b-card class="card-rounder" @click="indicated(3)" bg-variant="success" text-variant="white"  title="Area 1">
+                  <b-card class="card-rounder card-border-areea2" @click="indicated(3)"  title="Area 1">
                     <apexchart-all type="donut" :options="chartOptions" :series="series"></apexchart-all>
                     <b-card-text>
                       lotes disponibles <b-badge pill variant="success">23</b-badge><br>
@@ -1704,7 +1704,7 @@
               </b-col>
               <b-col lg="3" sm="6">
                 <vs-tooltip>
-                  <b-card class="card-rounder" @click="indicated(4)"  text-variant="white" bg-variant="info" title="Area 2">
+                  <b-card class="card-rounder card-border-areea3" @click="indicated(4)" title="Area 2">
                     <apexchart-all type="donut" :options="chartOptions" :series="series"></apexchart-all>
                     <b-card-text>
                       <br>
@@ -1720,7 +1720,7 @@
               </b-col>
               <b-col lg="3" sm="6">
                 <vs-tooltip>
-                  <b-card class="card-rounder" @click="indicated(5)"  text-variant="white" bg-variant="warning" title="Area 3">
+                  <b-card class="card-rounder card-border-areea4" @click="indicated(5)" title="Area 3">
                     <apexchart-all type="donut" :options="chartOptions" :series="series"></apexchart-all>
                     <b-card-text>
                       lotes disponibles <b-badge pill variant="success">23</b-badge><br>
@@ -1735,7 +1735,7 @@
               </b-col>
               <b-col lg="3" sm="6">
                 <vs-tooltip>
-                <b-card class="card-rounder" @click="indicated(6)"  text-variant="white" bg-variant="danger" title="Area 4" >
+                <b-card class="card-rounder card-border-areea5" @click="indicated(6)" title="Area 4" >
                   <apexchart-all type="donut" :options="chartOptions" :series="series"></apexchart-all>
 
                   <b-card-text>
@@ -1752,7 +1752,7 @@
               </b-col>
               <b-col lg="3" sm="6">
                 <vs-tooltip>
-                  <b-card class="card-rounder" @click="indicated(7)"  text-variant="white" bg-variant="dark" title="Area 5" >
+                  <b-card class="card-rounder card-border-areea6" @click="indicated(7)" title="Area 5" >
                     <apexchart-all type="donut" :options="chartOptions" :series="series"></apexchart-all>
 
                     <b-card-text>
@@ -1769,7 +1769,7 @@
               </b-col>
               <b-col lg="3" sm="6">
                 <vs-tooltip>
-                  <b-card class="card-rounder" @click="indicated(8)"  text-variant="white" bg-variant="secondary" title="Area 6" >
+                  <b-card class="card-rounder card-border-areea7" @click="indicated(8)" title="Area 6" >
                   <apexchart-all type="donut" :options="chartOptions" :series="series"></apexchart-all>
 
                   <b-card-text>
@@ -1812,8 +1812,8 @@ export default {
     indicador8: false,
     elementIdSVG: 'elementIdSVG',
     pathId: "",
-    svgWidth: 1500,
-    svgHeight: 1500,
+    svgWidth: 1000,
+    svgHeight: 1000,
     currentView: null,
 
     series: [60, 90, 20],
@@ -1836,7 +1836,7 @@ export default {
       }],
       legend: {
         labels: {
-          colors: ['#FFFFFF', '#FFFFFF', '#FFFFFF'] // Esto cambia el color del texto de las etiquetas de la leyenda a blanco
+          colors: ['#000', '#000', '#000'] // Esto cambia el color del texto de las etiquetas de la leyenda a blanco
         }
       }
     },
@@ -1931,5 +1931,32 @@ export default {
   /* height: 50%; */
   overflow-x: auto; /* Habilita el scroll horizontal */
 }
+
+
+.card-border-areea1{
+        border-left: 5px solid #007bff !important;
+}
+.card-border-areea2{
+        border-left: 5px solid #28a745 !important;
+}
+.card-border-areea3{
+        border-left: 5px solid #17a2b8 !important;
+}
+.card-border-areea4{
+        border-left: 5px solid #ffc107 !important;
+}
+.card-border-areea5{
+        border-left: 5px solid #dc3545 !important;
+}
+.card-border-areea6{
+        border-left: 5px solid #343a40 !important;
+}
+.card-border-areea7{
+        border-left: 5px solid #6c757d !important;
+}
+.card-border-areea8{
+        border-left: 5px solid #20c997 !important;
+}
+
 
 </style>

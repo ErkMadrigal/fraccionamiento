@@ -8,7 +8,7 @@
           </vs-button>
         </template> -->
         <vs-navbar-item :active="active == 'guide'" id="guide">
-          <router-link to="/" class="nav-link">
+          <router-link to="/mapa" class="nav-link">
             <box-icon name='map-alt'></box-icon>
             Mapa
           </router-link>
