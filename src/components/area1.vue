@@ -1050,6 +1050,7 @@ export default {
 
     titleAdquiridp: '',
 
+    lotesData: null,
     
 
   }),
@@ -1063,6 +1064,7 @@ export default {
       });
     }
   },
+  
   watch: {
     enganche() {
       this.generateDates();
@@ -1076,6 +1078,7 @@ export default {
   mounted() {
     this.getEnganche();
     this.getPlanCompra();
+    this.getLotes();
   },
   methods: {
     handleClick(lote) {
@@ -1118,6 +1121,14 @@ export default {
       }else{
         this.notify('danger', 'Error al obtener la cotizacion', 'es requerido seleccionar el enganche')
       }
+    },
+    getLotes(){
+      let url = this.apiUrl+'lotes/rango/102/120/'
+      fetchApi(url, 'GET')
+      .then(data => {
+        this.lotesData = data
+        console.log(data)
+      })
     },
     activateModal() {
       EventBus.$emit('activate-modal');

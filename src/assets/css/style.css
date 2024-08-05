@@ -6,6 +6,16 @@ html, body {
     overflow-x: hidden;
 }
 
+body, html {
+        margin: 0;
+        padding: 0;
+}
+      
+body {
+        background: #fff;
+        background-size: cover;
+}
+
 .commissioner {
         font-family: "Commissioner", sans-serif;
         font-optical-sizing: auto;
