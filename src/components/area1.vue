@@ -708,119 +708,25 @@
           id="layer2"
           inkscape:label="clicks"
           transform="translate(-50.852958,-153.71035)">
+
+            <path v-for="(pathData, index) in arrayLotes" :key="index"
+              :d="pathData.svg"
+              :style="{ fill: color(pathData.id_estatus), fillOpacity: 0.5, stroke: '#000000', strokeWidth: '2.18485', strokeDasharray: 'none'}"
+              :id="'path' + index" @click="handleClick(pathData.num_lote)"
+              sodipodi:nodetypes="ccccc" />
+
             <path
-            :style="{ fill: paths[0].color, fillOpacity: 0.5, stroke: '#000000', strokeWidth: '2.14582', strokeDasharray: 'none' }"
+            style=" fill: #dc3545; fill-opacity: 0.5; stroke: '#000000'; stroke-width: 2.18485; stroke-dasharray: 'none';"
             d="m 1163.133,-26.069195 2.2212,-125.107575 169.4071,0.58123 -3.2579,109.995852 -70.7837,15.838237 z"
-            :id="paths[0].id"  @click="handleClick('120')"
+            :id="path102"  @click="handleClick('120')"
             transform="translate(149.36466,319.59445)" />
             
             <path
-            :style="{ fill: paths[1].color, fillOpacity: 0.5, stroke: '#000000', strokeWidth: '2.18485', strokeDasharray: 'none' }"
+            style=" fill: #dc3545; fill-opacity: 0.5; stroke: '#000000'; stroke-width: 2.18485; stroke-dasharray: 'none';"
             d="m 591.4787,101.05462 77.77909,0.14627 98.97773,-20.185082 2.4401,-106.337326 H 593.46129 Z"
-            :id="paths[1].id" @click="handleClick('108')"
+            id="path108" @click="handleClick('108')"
             transform="translate(149.36466,319.59445)" />
-            
-            <path
-            :style="{fill: paths[2].color, fillOpacity:'0.5', stroke:'#000000', strokeWidth:'1.82002', strokeDasharray:'none', strokeDashoffset:'0'}"
-            d="M 78.128033,167.58688 H 188.89265 L 185.96624,292.6909 76.079546,292.39826 Z"
-            :id="paths[2]" @click="handleClick('109')"
-            inkscape:label="path21" />
-            
-            <path
-            :style="{fill: paths[3].color, fillOpacity:'0.5', stroke:'#000000', strokeWidth:'1.82002', strokeDasharray:'none', strokeDashoffset:'0'}"
-            d="m 189.10332,168.316 h 110.76462 l -2.92641,125.10402 -109.8867,-0.29264 z"
-            :id="paths[3].id" @click="handleClick('110')"
-            inkscape:label="path21" />
-            
-            <path
-            :style="{fill: paths[4].color, fillOpacity:'0.5', stroke:'#000000', strokeWidth:'1.82002', strokeDasharray:'none', strokeDashoffset:'0'}"
-            d="m 523.08552,168.70846 h 110.76462 l -2.92641,125.10402 -109.8867,-0.29264 z"
-            :id="paths[4].id" @click="handleClick('113')"
-            inkscape:label="path21" />
-            
-            <path
-            :style="{fill:paths[5].color, fillOpacity:0.5, stroke:'#000000', strokeWidth:1.82881, strokeDasharray:'none', strokeDashoffset:0}"
-            d="M 633.89826,169.89029 H 745.74387 L 742.7889,294.98541 631.82977,294.6928 Z"
-            :id="paths[5].id" @click="handleClick('114')"
-            inkscape:label="path21" />
-            
-            <path
-            :style="{fill:paths[6].color, fillOpacity:0.5, stroke:'#000000', strokeWidth:1.89557, strokeDasharray:'none', strokeDashoffset:0}"
-            d="M 745.08101,169.25406 H 865.30567 L 862.12933,294.2817 742.85757,293.98924 Z"
-            :id="paths[6].id" @click="handleClick('115')"
-            inkscape:label="path21" />
-            
-            <path
-            :style="{fill:paths[7].color, fillOpacity:0.5, stroke:'#000000', strokeWidth:1.86142, strokeDasharray:'none', strokeDashoffset:0}"
-            d="m 865.6472,168.72938 h 115.89971 l -3.06208,125.06218 -114.98108,-0.29254 z"
-            :id="paths[7].id" @click="handleClick('116')"
-            inkscape:label="path21" />
-            
-            <path
-            :style="{fill: paths[8].color, fillOpacity:'0.5', stroke:'#000000', strokeWidth:'1.82002', strokeDasharray:'none', strokeDashoffset:'0'}"
-            d="m 981.86952,169.10092 h 110.76458 l -2.9264,125.10402 -109.88667,-0.29264 z"
-            :id="paths[8].id" @click="handleClick('117')"
-            inkscape:label="path21" />
-            
-            <path
-            :style="{fill: paths[9].color, fillOpacity:'0.5', stroke:'#000000', strokeWidth:'1.82002', strokeDasharray:'none', strokeDashoffset:'0'}"
-            d="m 1092.5428,168.316 h 110.7646 l -2.9264,125.10402 -109.8867,-0.29264 z"
-            :id="paths[9].id" @click="handleClick('118')"
-            inkscape:label="path21" />
-            
-            <path
-            :style="{fill: paths[10].color, fillOpacity:'0.5', stroke:'#000000', strokeWidth:'1.82002', strokeDasharray:'none', strokeDashoffset:'0'}"
-            d="m 1204.001,168.70847 h 110.7646 l -2.9264,125.10402 -109.8867,-0.29264 z"
-            :id="paths[10].id" @click="handleClick('119')"
-            inkscape:label="path21" />
-            
-            <path
-            :style="{fill:paths[11].color, fillOpacity:0.5, stroke:'#000000', strokeWidth:1.83191, strokeDasharray:'none', strokeDashoffset:0}"
-            d="m 300.17487,167.44174 h 110.75282 l -2.92609,126.75729 -109.875,-0.29651 z"
-            :id="paths[11].id" @click="handleClick('111')"
-            inkscape:label="path21" />
-            
-            <path
-            :style="{fill: paths[12].color, fillOpacity:'0.5', stroke:'#000000', strokeWidth:'1.82002', strokeDasharray:'none', strokeDashoffset:'0'}"
-            d="m 411.23484,168.70846 h 110.76462 l -2.92641,125.10402 -109.8867,-0.29264 z"
-            :id="paths[12].id" @click="handleClick('112')"
-            inkscape:label="path21" />
-            
-            <path
-            :style="{fill:paths[13].color, fillOpacity:0.5, stroke:'#000000', strokeWidth:1.83975, strokeDasharray:'none', strokeDashoffset:0}"
-            d="m 629.49684,295.09008 h 113.19691 l -2.99067,125.08408 -112.29971,-0.29259 z"
-            :id="paths[13].id" @click="handleClick('107')"
-            inkscape:label="path21" />
-            
-            <path
-            :style="{fill: paths[14].color, fillOpacity:'0.5', stroke:'#000000', strokeWidth:'1.82002', strokeDasharray:'none', strokeDashoffset:'0'}"
-            d="m 519.45806,293.97418 h 110.76462 l -2.92641,125.10402 -109.8867,-0.29264 z"
-            :id="paths[15].id" @click="handleClick('106')"
-            inkscape:label="path21" />
-            
-            <path
-            :style="{fill: paths[15].color, fillOpacity:'0.5', stroke:'#000000', strokeWidth:'1.82002', strokeDasharray:'none', strokeDashoffset:'0'}"
-            d="m 408.73154,294.02469 h 110.76462 l -2.92641,125.10402 -109.8867,-0.29264 z"
-            :id="paths[15].id" @click="handleClick('105')"
-            inkscape:label="path21" />
-            
-            <path
-            :style="{fill:paths[16].color, fillOpacity:0.5, stroke:'#000000', strokeWidth:1.82399, strokeDasharray:'none', strokeDashoffset:0}"
-            d="m 298.00695,292.84927 h 110.76068 l -2.9263,125.65511 -109.88279,-0.29393 z"
-            :id="paths[16].id"  @click="handleClick('104')"
-            inkscape:label="path21" />
-            
-            <path
-            :style="{fill: paths[17].color, fillOpacity:'0.5', stroke:'#000000', strokeWidth:'1.82002', strokeDasharray:'none', strokeDashoffset:'0'}"
-            d="M 186.72348,293.40233 H 297.4881 l -2.92641,125.10402 -109.8867,-0.29264 z"
-            :id="paths[17].id"  @click="handleClick('103')"
-            inkscape:label="path21" />
-            
-            <path
-            :style="{fill: paths[18].color, fillOpacity:'0.5', stroke:'#000000', strokeWidth:'1.82002', strokeDasharray:'none', strokeDashoffset:'0'}"
-            d="M 75.682815,293.78778 H 186.44744 L 183.52103,418.8918 73.634325,418.59916 Z"
-            :id="paths[18].id"  @click="handleClick('102')"
-            inkscape:label="path21" /></g>
+          </g>
         </svg>
       </div>
 
@@ -829,7 +735,7 @@
           <b-row>
             <b-col lg="4" sm="6">
               <p>
-                largo x ancho: <br><strong> {{ textoLxA }}m</strong>
+                largo x ancho: <br><strong> {{ textoLxA }}</strong>
               </p>
             </b-col>
             <b-col lg="4" sm="6">
@@ -844,7 +750,7 @@
             </b-col>
             <b-col lg="4" sm="6">
               <p >
-                total: <br> <strong> {{ formattedNumber(datos.area_con_excedente) }}m<sup>2</sup></strong>
+                total: <br> <strong> {{ formattedNumber(datos.areaTotal) }}m<sup>2</sup></strong>
               </p>
             </b-col>
             <b-col lg="4" sm="6">
@@ -967,7 +873,7 @@
                 
                 <b-col lg="4" sm="6">
                   <p>
-                    Mensualidades: <br><strong> 21 </strong>
+                    Mensualidades: <br><strong> {{mesesFaltantes}} </strong>
                   </p>
                 </b-col>
                 <b-col lg="4" sm="6">
@@ -1044,11 +950,12 @@
 
 <script>
 import { fetchApi } from "@/service/service.js"
-import { openNotification } from "@/utils/notification.js"
+import { openNotification, setColor } from "@/utils/notification.js"
 import { EventBus } from '@/utils/eventBus.js';
 import cardEstatusComponent from '@/components/cardEstatus.vue';
 import numberMixin from '@/mixins/numberMixin';
 import { mapActions } from 'vuex';
+
 
 export default {
   mixins: [numberMixin],
@@ -1058,31 +965,7 @@ export default {
   },
   data:() => ({
     mesesFaltantes: null,
-    paths: [
-      { id: '120', color: '#dc3545' }, 
-      { id: '108', color: '#ffc107' }, 
-      { id: '109', color: '#ffc107' }, 
-      { id: '110', color: '#28a745' },
-
-      { id: '113', color: '#28a745' }, 
-      { id: '114', color: '#28a745' }, 
-      { id: '115', color: '#28a745' }, 
-      { id: '116', color: '#28a745' }, 
-      { id: '117', color: '#28a745' }, 
-      { id: '118', color: '#ffc107' }, 
-      { id: '119', color: '#28a745' }, 
-     
-      { id: '111', color: '#28a745' }, 
-      { id: '112', color: '#ffc107' }, 
-      
-      { id: '107', color: '#28a745' }, 
-      { id: '106', color: '#28a745' }, 
-      { id: '105', color: '#28a745' }, 
-      { id: '104', color: '#28a745' }, 
-      { id: '103', color: '#ffc107' }, 
-      { id: '102', color: '#28a745' }, 
-
-    ],
+    arrayLotes: [],
 
     search: '',
     page: 1,
@@ -1176,6 +1059,9 @@ export default {
     
 
     },
+    color(status){
+      return setColor(status)
+    },
     ...mapActions(['updateDatos']),
     enviarDatos(dataAPi, enganche, planPagos, sumaTotalTabla, mostrarTabla){
 
@@ -1190,36 +1076,7 @@ export default {
     getLotes(){
       let url = this.apiUrl+'lotes/rango/102/120/'
       fetchApi(url, 'GET')
-      .then(data => {
-        if (!data || !Array.isArray(data)) {
-          console.error('dataItems is not initialized or not an array');
-          return;
-        }
-
-        data.forEach(item => {
-          // Busca el path correspondiente por id (num_lote)
-          const path = this.paths.find(p => p.id === String(item.num_lote));
-          if (path) {
-            // Determina el color basado en el estatus
-            let newColor;
-            switch (item.estatus) {
-              case 'Disponible':
-                newColor = '#28a745'; // Verde
-                break;
-              case 'Vendido':
-                newColor = '#dc3545'; // Rojo
-                break;
-              case 'Apartado':
-                newColor = '#ffc107'; // Amarillo
-                break;
-              default:
-                newColor = '#6c757d'; // Gris
-            }
-            path.color = newColor;
-          }
-        });
-
-      })
+      .then(data => this.arrayLotes = data)
     },
     activateModal() {
       EventBus.$emit('activate-modal');

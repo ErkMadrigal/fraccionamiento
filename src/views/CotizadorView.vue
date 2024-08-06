@@ -299,6 +299,10 @@
           108: require('../assets/mapas/area/lote_108.png'),
           106: require('../assets/mapas/area/lote_108.png'),
           120: require('../assets/mapas/area/lote_120.png'),
+          121: require('../assets/mapas/area/lote_138_121.png'),
+          137: require('../assets/mapas/area/lote_154_137.png'),
+          138: require('../assets/mapas/area/lote_138_121.png'),
+          154: require('../assets/mapas/area/lote_154_137.png'),
           default: require('../assets/mapas/area/lote_128m_gen.png')
         };
         return imageMap[id] || imageMap.default;

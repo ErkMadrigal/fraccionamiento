@@ -1,7 +1,7 @@
 <template>
-  <div class="home">
-    <b-container fluid class="mt-5">
-      <div class="svg-container" style="height:19rem">
+    <div class="home">
+      <SidebarComponent/>
+      <b-container fluid class="mt-5">
         <svg
         width="1679.7841"
         height="245.90796"
@@ -24,15 +24,15 @@
         inkscape:pagecheckerboard="true"
         inkscape:deskcolor="#d1d1d1"
         inkscape:document-units="mm"
-        inkscape:zoom="11.588216"
-        inkscape:cx="1673.6399"
-        inkscape:cy="9.4492547"
+        inkscape:zoom="0.72426347"
+        inkscape:cx="178.80233"
+        inkscape:cy="363.81788"
         inkscape:window-width="1920"
         inkscape:window-height="1009"
         inkscape:window-x="-8"
         inkscape:window-y="-8"
         inkscape:window-maximized="1"
-        inkscape:current-layer="layer5" /><defs
+        inkscape:current-layer="layer3" /><defs
         id="defs1" /><g
         inkscape:groupmode="layer"
         id="layer3"
@@ -161,7 +161,7 @@
             x="134.21056"
             y="271.40411"
             id="tspan2-6-3-6-5-3-54"
-            sodipodi:role="line">121</tspan></text><text
+            sodipodi:role="line">102</tspan></text><text
           xml:space="preserve"
           style="font-weight:300;font-size:9.93968px;line-height:0ex;font-family:Corbel;-inkscape-font-specification:'Corbel Light';display:inline;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.525948"
           x="564.75708"
@@ -172,7 +172,7 @@
             x="564.75708"
             y="275.70218"
             id="tspan2-6-3-6-5-3-54-2"
-            sodipodi:role="line">125</tspan></text><text
+            sodipodi:role="line">102</tspan></text><text
           xml:space="preserve"
           style="font-weight:300;font-size:15.6585px;line-height:0ex;font-family:Corbel;-inkscape-font-specification:'Corbel Light';fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.828549"
           x="870.4812"
@@ -1689,7 +1689,7 @@
             x="250.85484"
             y="272.492"
             id="tspan2-6-3-6-5-3-54-8"
-            sodipodi:role="line">122</tspan></text><text
+            sodipodi:role="line">102</tspan></text><text
           xml:space="preserve"
           style="font-weight:300;font-size:9.93968px;line-height:0ex;font-family:Corbel;-inkscape-font-specification:'Corbel Light';display:inline;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.525948"
           x="357.85815"
@@ -1700,7 +1700,7 @@
             x="357.85815"
             y="273.73523"
             id="tspan2-6-3-6-5-3-54-7"
-            sodipodi:role="line">123</tspan></text><text
+            sodipodi:role="line">102</tspan></text><text
           xml:space="preserve"
           style="font-weight:300;font-size:9.93968px;line-height:0ex;font-family:Corbel;-inkscape-font-specification:'Corbel Light';display:inline;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.525948"
           x="457.80307"
@@ -1711,7 +1711,7 @@
             x="457.80307"
             y="274.40601"
             id="tspan2-6-3-6-5-3-54-6"
-            sodipodi:role="line">124</tspan></text><text
+            sodipodi:role="line">102</tspan></text><text
           xml:space="preserve"
           style="font-weight:300;font-size:9.93968px;line-height:0ex;font-family:Corbel;-inkscape-font-specification:'Corbel Light';display:inline;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.525948"
           x="669.77905"
@@ -1722,7 +1722,7 @@
             x="669.77905"
             y="276.6488"
             id="tspan2-6-3-6-5-3-54-87"
-            sodipodi:role="line">126</tspan></text><text
+            sodipodi:role="line">102</tspan></text><text
           xml:space="preserve"
           style="font-weight:300;font-size:9.93968px;line-height:0ex;font-family:Corbel;-inkscape-font-specification:'Corbel Light';display:inline;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.525948"
           x="777.38513"
@@ -1733,7 +1733,7 @@
             x="777.38513"
             y="277.78732"
             id="tspan2-6-3-6-5-3-54-83"
-            sodipodi:role="line">127</tspan></text><text
+            sodipodi:role="line">102</tspan></text><text
           xml:space="preserve"
           style="font-weight:300;font-size:9.93968px;line-height:0ex;font-family:Corbel;-inkscape-font-specification:'Corbel Light';display:inline;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.525948"
           x="879.27521"
@@ -1744,7 +1744,7 @@
             x="879.27521"
             y="278.94971"
             id="tspan2-6-3-6-5-3-54-3"
-            sodipodi:role="line">128</tspan></text><text
+            sodipodi:role="line">102</tspan></text><text
           xml:space="preserve"
           style="font-weight:300;font-size:9.93968px;line-height:0ex;font-family:Corbel;-inkscape-font-specification:'Corbel Light';display:inline;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.525948"
           x="985.72876"
@@ -1755,7 +1755,7 @@
             x="985.72876"
             y="279.9917"
             id="tspan2-6-3-6-5-3-54-9"
-            sodipodi:role="line">129</tspan></text><text
+            sodipodi:role="line">102</tspan></text><text
           xml:space="preserve"
           style="font-weight:300;font-size:9.93968px;line-height:0ex;font-family:Corbel;-inkscape-font-specification:'Corbel Light';display:inline;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.525948"
           x="1089.8854"
@@ -1766,7 +1766,7 @@
             x="1089.8854"
             y="280.92917"
             id="tspan2-6-3-6-5-3-54-4"
-            sodipodi:role="line">130</tspan></text><text
+            sodipodi:role="line">102</tspan></text><text
           xml:space="preserve"
           style="font-weight:300;font-size:9.93968px;line-height:0ex;font-family:Corbel;-inkscape-font-specification:'Corbel Light';display:inline;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.525948"
           x="1193.1919"
@@ -1777,7 +1777,7 @@
             x="1193.1919"
             y="282.02222"
             id="tspan2-6-3-6-5-3-54-65"
-            sodipodi:role="line">131</tspan></text><text
+            sodipodi:role="line">102</tspan></text><text
           xml:space="preserve"
           style="font-weight:300;font-size:9.93968px;line-height:0ex;font-family:Corbel;-inkscape-font-specification:'Corbel Light';display:inline;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.525948"
           x="1295.4637"
@@ -1788,7 +1788,7 @@
             x="1295.4637"
             y="283.07755"
             id="tspan2-6-3-6-5-3-54-49"
-            sodipodi:role="line">132</tspan></text><text
+            sodipodi:role="line">102</tspan></text><text
           xml:space="preserve"
           style="font-weight:300;font-size:9.93968px;line-height:0ex;font-family:Corbel;-inkscape-font-specification:'Corbel Light';display:inline;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.525948"
           x="1402.9587"
@@ -1799,7 +1799,7 @@
             x="1402.9587"
             y="283.93927"
             id="tspan2-6-3-6-5-3-54-33"
-            sodipodi:role="line">133</tspan></text><text
+            sodipodi:role="line">102</tspan></text><text
           xml:space="preserve"
           style="font-weight:300;font-size:9.93968px;line-height:0ex;font-family:Corbel;-inkscape-font-specification:'Corbel Light';display:inline;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.525948"
           x="1509.1162"
@@ -1810,7 +1810,7 @@
             x="1509.1162"
             y="285.0892"
             id="tspan2-6-3-6-5-3-54-36"
-            sodipodi:role="line">134</tspan></text><text
+            sodipodi:role="line">102</tspan></text><text
           xml:space="preserve"
           style="font-weight:300;font-size:9.93968px;line-height:0ex;font-family:Corbel;-inkscape-font-specification:'Corbel Light';display:inline;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.525948"
           x="1609.4872"
@@ -1821,7 +1821,7 @@
             x="1609.4872"
             y="286.42679"
             id="tspan2-6-3-6-5-3-54-0"
-            sodipodi:role="line">135</tspan></text><text
+            sodipodi:role="line">102</tspan></text><text
           xml:space="preserve"
           style="font-weight:300;font-size:9.93968px;line-height:0ex;font-family:Corbel;-inkscape-font-specification:'Corbel Light';display:inline;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.525948"
           x="1713.0333"
@@ -1832,7 +1832,7 @@
             x="1713.0333"
             y="287.38455"
             id="tspan2-6-3-6-5-3-54-41"
-            sodipodi:role="line">136</tspan></text><text
+            sodipodi:role="line">102</tspan></text><text
           xml:space="preserve"
           style="font-weight:300;font-size:9.93968px;line-height:0ex;font-family:Corbel;-inkscape-font-specification:'Corbel Light';display:inline;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.525948"
           x="1820.6368"
@@ -1843,7 +1843,7 @@
             x="1820.6368"
             y="288.49631"
             id="tspan2-6-3-6-5-3-54-29"
-            sodipodi:role="line">137</tspan></text><text
+            sodipodi:role="line">102</tspan></text><text
           xml:space="preserve"
           style="font-weight:300;font-size:9.93968px;line-height:0ex;font-family:Corbel;-inkscape-font-specification:'Corbel Light';display:inline;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.525948"
           x="123.3503"
@@ -1854,7 +1854,7 @@
             x="123.3503"
             y="17.068272"
             id="tspan2-6-3-6-5-3-54-34"
-            sodipodi:role="line">138</tspan></text><text
+            sodipodi:role="line">102</tspan></text><text
           xml:space="preserve"
           style="font-weight:300;font-size:9.93968px;line-height:0ex;font-family:Corbel;-inkscape-font-specification:'Corbel Light';display:inline;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.525948"
           x="541.57733"
@@ -1865,7 +1865,7 @@
             x="541.57733"
             y="20.960365"
             id="tspan2-6-3-6-5-3-54-2-1"
-            sodipodi:role="line">142</tspan></text><text
+            sodipodi:role="line">102</tspan></text><text
           xml:space="preserve"
           style="font-weight:300;font-size:9.93968px;line-height:0ex;font-family:Corbel;-inkscape-font-specification:'Corbel Light';display:inline;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.525948"
           x="227.39575"
@@ -1876,7 +1876,7 @@
             x="227.39575"
             y="17.747234"
             id="tspan2-6-3-6-5-3-54-8-1"
-            sodipodi:role="line">139</tspan></text><text
+            sodipodi:role="line">102</tspan></text><text
           xml:space="preserve"
           style="font-weight:300;font-size:9.93968px;line-height:0ex;font-family:Corbel;-inkscape-font-specification:'Corbel Light';display:inline;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.525948"
           x="337.34558"
@@ -1887,7 +1887,7 @@
             x="337.34558"
             y="19.159449"
             id="tspan2-6-3-6-5-3-54-7-0"
-            sodipodi:role="line">140</tspan></text><text
+            sodipodi:role="line">102</tspan></text><text
           xml:space="preserve"
           style="font-weight:300;font-size:9.93968px;line-height:0ex;font-family:Corbel;-inkscape-font-specification:'Corbel Light';display:inline;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.525948"
           x="437.55713"
@@ -1898,7 +1898,7 @@
             x="437.55713"
             y="19.695232"
             id="tspan2-6-3-6-5-3-54-6-0"
-            sodipodi:role="line">141</tspan></text><text
+            sodipodi:role="line">102</tspan></text><text
           xml:space="preserve"
           style="font-weight:300;font-size:9.93968px;line-height:0ex;font-family:Corbel;-inkscape-font-specification:'Corbel Light';display:inline;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.525948"
           x="646.73895"
@@ -1909,7 +1909,7 @@
             x="646.73895"
             y="21.908468"
             id="tspan2-6-3-6-5-3-54-87-5"
-            sodipodi:role="line">143</tspan></text><text
+            sodipodi:role="line">102</tspan></text><text
           xml:space="preserve"
           style="font-weight:300;font-size:9.93968px;line-height:0ex;font-family:Corbel;-inkscape-font-specification:'Corbel Light';display:inline;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.525948"
           x="755.04358"
@@ -1920,7 +1920,7 @@
             x="755.04358"
             y="23.054379"
             id="tspan2-6-3-6-5-3-54-83-8"
-            sodipodi:role="line">144</tspan></text><text
+            sodipodi:role="line">102</tspan></text><text
           xml:space="preserve"
           style="font-weight:300;font-size:9.93968px;line-height:0ex;font-family:Corbel;-inkscape-font-specification:'Corbel Light';display:inline;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.525948"
           x="857.63214"
@@ -1931,7 +1931,7 @@
             x="857.63214"
             y="24.224154"
             id="tspan2-6-3-6-5-3-54-3-0"
-            sodipodi:role="line">145</tspan></text><text
+            sodipodi:role="line">102</tspan></text><text
           xml:space="preserve"
           style="font-weight:300;font-size:9.93968px;line-height:0ex;font-family:Corbel;-inkscape-font-specification:'Corbel Light';display:inline;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.525948"
           x="972.87433"
@@ -1942,7 +1942,7 @@
             x="972.87433"
             y="25.221319"
             id="tspan2-6-3-6-5-3-54-9-6"
-            sodipodi:role="line">146</tspan></text><text
+            sodipodi:role="line">102</tspan></text><text
           xml:space="preserve"
           style="font-weight:300;font-size:9.93968px;line-height:0ex;font-family:Corbel;-inkscape-font-specification:'Corbel Light';display:inline;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.525948"
           x="1063.34"
@@ -1953,7 +1953,7 @@
             x="1063.34"
             y="26.013931"
             id="tspan2-6-3-6-5-3-54-4-2"
-            sodipodi:role="line">147</tspan></text><text
+            sodipodi:role="line">102</tspan></text><text
           xml:space="preserve"
           style="font-weight:300;font-size:9.93968px;line-height:0ex;font-family:Corbel;-inkscape-font-specification:'Corbel Light';display:inline;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.525948"
           x="1166.3542"
@@ -1964,7 +1964,7 @@
             x="1166.3542"
             y="26.966076"
             id="tspan2-6-3-6-5-3-54-65-3"
-            sodipodi:role="line">148</tspan></text><text
+            sodipodi:role="line">102</tspan></text><text
           xml:space="preserve"
           style="font-weight:300;font-size:9.93968px;line-height:0ex;font-family:Corbel;-inkscape-font-specification:'Corbel Light';display:inline;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.525948"
           x="1276.3353"
@@ -1975,7 +1975,7 @@
             x="1276.3353"
             y="28.378595"
             id="tspan2-6-3-6-5-3-54-49-2"
-            sodipodi:role="line">149</tspan></text><text
+            sodipodi:role="line">102</tspan></text><text
           xml:space="preserve"
           style="font-weight:300;font-size:9.93968px;line-height:0ex;font-family:Corbel;-inkscape-font-specification:'Corbel Light';display:inline;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.525948"
           x="1371.7903"
@@ -1986,7 +1986,7 @@
             x="1371.7903"
             y="28.837305"
             id="tspan2-6-3-6-5-3-54-33-1"
-            sodipodi:role="line">150</tspan></text><text
+            sodipodi:role="line">102</tspan></text><text
           xml:space="preserve"
           style="font-weight:300;font-size:9.93968px;line-height:0ex;font-family:Corbel;-inkscape-font-specification:'Corbel Light';display:inline;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.525948"
           x="1478.3796"
@@ -1997,7 +1997,7 @@
             x="1478.3796"
             y="30.129622"
             id="tspan2-6-3-6-5-3-54-36-5"
-            sodipodi:role="line">151</tspan></text><text
+            sodipodi:role="line">102</tspan></text><text
           xml:space="preserve"
           style="font-weight:300;font-size:9.93968px;line-height:0ex;font-family:Corbel;-inkscape-font-specification:'Corbel Light';display:inline;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.525948"
           x="1583.8181"
@@ -2008,7 +2008,7 @@
             x="1583.8181"
             y="31.934263"
             id="tspan2-6-3-6-5-3-54-0-4"
-            sodipodi:role="line">152</tspan></text><text
+            sodipodi:role="line">102</tspan></text><text
           xml:space="preserve"
           style="font-weight:300;font-size:9.93968px;line-height:0ex;font-family:Corbel;-inkscape-font-specification:'Corbel Light';display:inline;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.525948"
           x="1688.85"
@@ -2019,7 +2019,7 @@
             x="1688.85"
             y="32.356495"
             id="tspan2-6-3-6-5-3-54-41-5"
-            sodipodi:role="line">153</tspan></text><text
+            sodipodi:role="line">102</tspan></text><text
           xml:space="preserve"
           style="font-weight:300;font-size:9.93968px;line-height:0ex;font-family:Corbel;-inkscape-font-specification:'Corbel Light';display:inline;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.525948"
           x="1795.7549"
@@ -2030,453 +2030,94 @@
             x="1795.7549"
             y="33.460861"
             id="tspan2-6-3-6-5-3-54-29-2"
-            sodipodi:role="line">154</tspan></text></g><g
+            sodipodi:role="line">102</tspan></text></g><g
         inkscape:groupmode="layer"
         id="layer4"
         inkscape:label="clicks">
-          <path v-for="(pathData, index) in arrayLotes" :key="index"
-          :d="pathData.svg"
-          :style="{ fill: color(pathData.id_estatus), fillOpacity: 0.5, stroke: '#000000', strokeWidth: '2.18485'}"
-          :id="'path' + index" @click="handleClick(pathData.num_lote)"
-          sodipodi:nodetypes="ccccc" />
-        </g>
-        </svg>
-      </div>
-
-      <b-card  style="max-width: 1200px;" class="card-rounder mt-3 card-border-success" v-if="mostrarLibre" :title="'Esquema y plan de compra '+lote" >
-        <b-card-text>
-          <b-row>
-            <b-col lg="4" sm="6">
-              <p>
-                largo x ancho: <br><strong> {{ textoLxA }}</strong>
-              </p>
-            </b-col>
-            <b-col lg="4" sm="6">
-              <p>
-                M<sup>2</sup> Lote:<br> <strong>{{ formattedNumber(datos.area) }}m<sup>2</sup></strong>
-              </p>
-            </b-col>
-            <b-col lg="4" sm="6">
-              <p >
-                Exedente: <br> <strong> {{ formattedNumber(datos.excedente) }}m<sup>2</sup></strong>
-              </p>
-            </b-col>
-            <b-col lg="4" sm="6">
-              <p >
-                total: <br> <strong> {{ formattedNumber(datos.areaTotal) }}m<sup>2</sup></strong>
-              </p>
-            </b-col>
-            <b-col lg="4" sm="6">
-              <p>
-                Importe apartado <br> <strong>$ {{ formattedNumber(importeApartado) }}</strong>
-              </p>
-            </b-col>
-            <b-col lg="4" sm="6">
-              <p>
-                Fecha de contrato <br> <strong>{{ formattedDate  }}</strong>
-              </p>
-            </b-col>
-            <b-col lg="4" sm="6">
-              <p>
-                Precio por m<sup>2</sup> <strong> $ {{ formattedNumber(datos.precio) }}</strong>
-              </p>
-            </b-col>
-          </b-row>
-        </b-card-text>
-        <div class="center con-selects mb-4 w-25">
-          <label for="Plan de Compra">Plan de Compra</label>
-          <v-select 
-            v-model="planPago" 
-            :options="planCompra" 
-            :reduce="option => option.value"
-            label="label" 
-            placeholder="--Selecciona una opcion--"
-            :searchable="true"
-            no-results-text="No se encontraron resultados" 
-
-          />
-        </div>
-        <b-row>
-          <b-col cols="12">
-            <b-card class="mt-3" title="contado" v-if="planPago == '2'">
-              <b-row>
-                <b-col lg="4" sm="6">
-                  <label for="Enganche">Enganche</label>
-                  <v-select 
-                    v-model="enganche" 
-                    :options="montosEnganche" 
-                    :reduce="option => option.value"
-                    label="label" 
-                    placeholder="--Selecciona una opcion--"
-                    :searchable="true"
-                    no-results-text="No se encontraron resultados" 
-
-                  />
-                </b-col>
-                <b-col lg="4" sm="6">
-                  <p>
-                    Precio Lista: <br><strong> $ {{ formattedNumber(datos.precio*areaTotal) }} </strong>
-                  </p>
-                </b-col>
-                <b-col lg="4" sm="6">
-                  <p>
-                    Descuento: <br><strong> {{  datos.descuento  }}% </strong>
-                  </p>
-                </b-col>
-                <b-col lg="4" sm="6">
-                  <p>
-                    Total Descuento: <br><strong> $ {{ formattedNumber( (datos.precio*areaTotal)*(datos.descuento/100) ) }} </strong>
-                  </p>
-                </b-col>
-                <b-col lg="4" sm="6">
-                    <p>Total pagos: <br><strong> $ {{ formattedNumber(parseFloat(importeApartado) + parseFloat(enganche)) }} </strong></p>
-                </b-col>
-                <b-col lg="4" sm="6">
-                    <p>Pago al escriturar: <br><strong> $ {{ formattedNumber( (datos.precio*areaTotal) - ((datos.precio*areaTotal)*(datos.descuento/100))-(parseFloat(importeApartado) + parseFloat(enganche)) ) }} </strong></p>
-                </b-col>
-  
-              </b-row>
-              <b-card-text class="float-end">
-                <p>Precio Total: <br><strong> $ {{ formattedNumber( (datos.precio*areaTotal) - ((datos.precio*areaTotal)*(datos.descuento/100)) ) }} </strong></p>
-              </b-card-text>
-              <vs-button
-                block
-                @click="enviarDatos(datos, enganche, planPago, 0, false)"
-              >
-                <box-icon name='log-in-circle' color="#fff"></box-icon> Iniciar
-              </vs-button>
-            </b-card>
-            <b-card title="credito" v-if="planPago == '1'">
-              <b-row>
-                <b-col lg="4" sm="6">
-                  <label for="Enganche">Enganche</label>
-                  <v-select 
-                    v-model="enganche" 
-                    :options="montosEnganche" 
-                    :reduce="option => option.value"
-                    label="label" 
-                    placeholder="--Selecciona una opcion--"
-                    :searchable="true"
-                    no-results-text="No se encontraron resultados" 
-
-                  />
-                </b-col>
-                <b-col lg="4" sm="6">
-                  <p>
-                    Precio Lista: <br><strong> $ {{ formattedNumber(datos.precio*datos.areaTotal) }} </strong>
-                  </p>
-                </b-col>
-                <b-col lg="4" sm="6">
-                  <p >
-                    Descuento: <br><strong v-if="enganche == '285000.00'"> 9% </strong><strong v-else> 4% </strong>
-                  </p>
-                </b-col>
-                <b-col lg="4" sm="6">
-                  <p >
-                    Total Descuento: <br><strong v-if="enganche == '285000.00'"> $ {{ formattedNumber( (datos.precio*datos.areaTotal)*(9/100) ) }} </strong> <strong v-else> $ {{ formattedNumber( (datos.precio*datos.areaTotal)*(4/100) ) }} </strong>
-                  </p>
-                </b-col>
-                
-                <b-col lg="4" sm="6">
-                  <p >
-                    Precio Total: <br><strong v-if="enganche == '285000.00'"> $ {{ formattedNumber( (datos.precio*datos.areaTotal) - ((datos.precio*datos.areaTotal)*(9/100)) ) }} </strong> <strong v-else> $ {{ formattedNumber( (datos.precio*datos.areaTotal) - ((datos.precio*datos.areaTotal)*(4/100)) ) }} </strong>
-                  </p>
-                </b-col>
-                
-                
-                <b-col lg="4" sm="6">
-                  <p>
-                    Mensualidades: <br><strong> {{mesesFaltantes}} </strong>
-                  </p>
-                </b-col>
-                <b-col lg="4" sm="6">
-                  <p>Total pagos: <br><strong> $ {{ formattedNumber(parseFloat(importeApartado) + parseFloat(enganche)) }} </strong></p>
-                </b-col>
-
-                <b-col lg="4" sm="6">
-                  <p>Total Mensualidades: <br><strong> $ {{ formattedNumber(sumaTotalTabla) }} </strong></p>
-                </b-col>
-                
-                <b-col lg="4" sm="6">
-                  
-                  <p>
-                      Pago al escriturar: <br><strong v-if="enganche == '285000.00'"> $ {{ formattedNumber( ((datos.precio*datos.areaTotal) - ((datos.precio*datos.areaTotal)*(9/100))) - (parseFloat(importeApartado) + parseFloat(enganche) +   parseFloat(sumaTotalTabla)) ) }} </strong> <strong v-else> $ {{ formattedNumber( ((datos.precio*datos.areaTotal) - ((datos.precio*datos.areaTotal)*(4/100))) -(parseFloat(importeApartado) + parseFloat(enganche) + parseFloat(sumaTotalTabla)) ) }} </strong>
-                  </p>
-                </b-col>
-              </b-row>
-              <vs-table v-if="mostrarTabla">
-                <template #header>
-                  <vs-input v-model="search" border placeholder="Buscar" />
-                </template>
-                <template #thead>
-                  <vs-tr>
-                    <vs-th sort @click="dates = $vs.sortData($event ,dates, 'mensualidades')">
-                      <box-icon name='credit-card' ></box-icon>
-                    </vs-th>
-                    <vs-th sort @click="dates = $vs.sortData($event ,dates, 'Fecha')">
-                      <box-icon name='calendar' ></box-icon>
-                    </vs-th>
-                    <vs-th sort @click="dates = $vs.sortData($event ,dates, 'importe')">
-                      <box-icon name='money-withdraw' ></box-icon>
-                    </vs-th>
-                  </vs-tr>
-                </template>
-                <template #tbody>
-                  <vs-tr
-                    :key="i"
-                    v-for="(tr, i) in $vs.getPage($vs.getSearch(dates, search), page, max)"
-                    :data="tr"
-                  >
-                    <vs-td>
-                      {{ tr.mensualidad }}
-                    </vs-td>
-                    <vs-td>
-                      {{ tr.fecha }}
-                    </vs-td>
-                    <vs-td>
-                      {{ tr.importe }}
-                    </vs-td>
-                  </vs-tr>
-                </template>
-                <template #footer>
-                  <vs-pagination v-model="page" :length="$vs.getLength($vs.getSearch(dates, search), max)" />
-                </template>
-              </vs-table>
-              <vs-button
-                block
-                @click="enviarDatos(datos, enganche, planPago, sumaTotalTabla, true)"
-              >
-                <box-icon name='log-in-circle' color="#fff"></box-icon> Iniciar
-              </vs-button>
-            </b-card>
-            
-          </b-col>
-        </b-row>
-      </b-card>
-      <cardEstatusComponent v-if="mostrarApartado" />
-      
-    </b-container>
-
-
-  </div>
-</template>
-
-<script>
-import { fetchApi } from "@/service/service.js"
-import { openNotification, setColor } from "@/utils/notification.js"
-import { EventBus } from '@/utils/eventBus.js';
-import cardEstatusComponent from '@/components/cardEstatus.vue';
-import numberMixin from '@/mixins/numberMixin';
-import { mapActions } from 'vuex';
-
-export default {
-  mixins: [numberMixin],
-  name: "Area1Component",
-  components: {
-    cardEstatusComponent
-  },
-  data:() => ({
-    mesesFaltantes: null,
-
-    search: '',
-    page: 1,
-    max: 7,
-    
-    dates: [],
-
-    mostrarTabla: false,
-    sumaTotalTabla: 0,
-
-    planPago: '',
-    isPuffed: true,
-    mostrarApartado: false,
-    mostrarLibre: false,
-    currentDate: new Date(),
-    lote: '',
-    execente: 0, 
-    montoLista: 0,
-    apiUrl: process.env.VUE_APP_API_URL,
-    datos: {},
-
-    montosEnganche: [],
-    planCompra: [],
-    estatus:[],
-
-    textoLxA: '',
-    importeApartado: 15000, 
-    enganche: 0,
-
-    titleAdquiridp: '',
-
-    arrayLotes: [],
-
-  }),
-  computed: {
-    formattedDate() {
-      return this.currentDate.toLocaleDateString('es-ES', {
-        weekday: 'long', 
-        year: 'numeric', 
-        month: 'long', 
-        day: 'numeric' 
-      });
-    }
-  },
-  
-  watch: {
-    enganche() {
-      this.generateDates();
-      this.mostrarTabla = true;
-    },
-    planPago(){
-      this.mostrarTabla = false;
-      this.sumaTotalTabla = 0;
-    }
-  },
-  mounted() {
-    this.getEnganche();
-    this.getPlanCompra();
-    this.getLotes();
-    
-  },
-  methods: {
-
-    handleClick(lote) {
-      fetchApi(this.apiUrl+'lotes/'+lote, 'GET')
-      .then(data => {
-        this.datos = data  
-      })
-
-      this.textoLxA = this.datos.ancho+'m x '+ this.datos.largo+'m';
-      
-      if(this.datos.id_estatus == 5 ){
-        this.lote = "Lote "+lote;
-        this.mostrarLibre = true;
-        this.mostrarApartado = false
-      }
-      if(this.datos.id_estatus == 6 ){
-          this.mostrarLibre = false;
-          this.mostrarApartado = true;
-          let datos = this.datos;
-
-          datos.area = "Area-1";
-          
-          this.$store.commit('setCardEstatusDatos', datos);
-
-          this.notify('warning', 'Lote apartado', 'este lote esta apartado por')
-      }
-      if(this.datos.id_estatus == 7 ){
-        this.notify('danger', 'Lote vendido', 'este lote esta vendido')
-      }
-    
-
-    },
-    color(status){
-      return setColor(status)
-    },
-    ...mapActions(['updateDatos']),
-    enviarDatos(dataAPi, enganche, planPagos, sumaTotalTabla, mostrarTabla){
-
-      if(enganche != 0){
-        const datos = { dataAPi, enganche, planPagos, sumaTotalTabla, mostrarTabla };
-        this.updateDatos(datos);
-        this.$router.push({ name: 'Cotizador' });
-      }else{
-        this.notify('danger', 'Error al obtener la cotizacion', 'es requerido seleccionar el enganche')
-      }
-    },
-    
-    getLotes(){
-      let url = this.apiUrl+'lotes/rango/121/154/'
-      fetchApi(url, 'GET')
-      .then(data => this.arrayLotes = data)
-
-    },
-    activateModal() {
-      EventBus.$emit('activate-modal');
-    },
-    notify(color, title, text) {
-
-      openNotification(this, 'top-center', color, title, text);
-    },
-    
-    getEstatus(){
-      fetchApi(this.apiUrl+'catalogos/?tipo_catalogo=estatus', 'GET')
-      .then(data => {
-        this.estatus = data
-      })
-    },
-    getEnganche(){
-      fetchApi(this.apiUrl+'catalogos/?tipo_catalogo=precio_enganche', 'GET')
-      .then(data => {
-        this.montosEnganche = data.map(item => ({
-          value: item.valor_numero,
-          label: this.formattedNumber(item.valor_numero)
-        }));    
-      })
-    },
-    
-    getPlanCompra(){
-      fetchApi(this.apiUrl+'catalogos/?tipo_catalogo=plan_compra', 'GET')
-      .then(data => {
-        this.planCompra = data.map(item => ({
-          value: item.id,
-          label: item.valor_text
-        }));   
-      })
-    },
-    generateDates() {
-      // Fecha actual
-      const fechaActual = new Date();
-      
-      // Año y mes de destino (abril 2026)
-      const añoDestino = 2026;
-      const mesDestino = 3; // Abril es el mes 3 (0-indexado)
-      
-      // Calcular la diferencia en años y meses
-      const diferenciaAños = añoDestino - fechaActual.getFullYear();
-      const diferenciaMeses = mesDestino - fechaActual.getMonth();
-      
-      // Total de meses faltantes
-      this.mesesFaltantes = (diferenciaAños * 12) + diferenciaMeses;
-
-
-      const dates = [];
-      const today = new Date();
-      
-      for (let i = 0; i < this.mesesFaltantes; i++) {
-        const newDate = new Date(today);
-        newDate.setMonth(today.getMonth() + i);
-        let pagos = {
-          id: i,
-          mensualidad: "Mensualidad " + (i+1),
-          fecha: newDate.toLocaleDateString(),
-          importe: "00.00",
-        }
-        if(this.enganche == '285000.00'){
-          pagos.importe = "10,000.00" 
-          this.sumaTotalTabla = "210000.00" 
-        }else{
-          pagos.importe = "13,500.00" 
-          this.sumaTotalTabla = "283500.00" 
-        }
         
-        dates.push(pagos);
-      }
-      this.dates = dates;
+        <path v-for="(pathData, index) in svgs" :key="index"
+          :d="pathData"
+          style="fill:#00ff00;fill-opacity:0.48710603;stroke:#000000;stroke-width:1.56849"
+          :id="'path' + index"
+          sodipodi:nodetypes="ccccc" />
+          
+          </g>
+        </svg>
+      </b-container>
+  
+  
+    </div>
+  </template>
+  
+  <script>
+  import { openNotification } from "@/utils/notification.js"
+  import SidebarComponent from '@/components/Sidebar.vue'
+  import { EventBus } from '@/utils/eventBus.js';
+  
+  export default {
+    name: "Area2Component",
+    components: {
+      SidebarComponent,
     },
+    data:() => ({
+      active: false,
+      svgs: [
+        {svg: 'm 176.77392,141.94139 0.41627,121.46126 -150.559083,0.6125 -0.12192,-121.82006 z', num_lote:121},
+        {svg: 'm 177.17047,142.02071 104.92192,0.083 -0.36915,121.30388 -104.73216,-0.21306 z', num_lote:122},
+        {svg: 'm 282.11978,142.09502 103.46653,-0.0743 0.71062,121.34622 -104.41401,-0.19623 z', num_lote:123},
+        {svg: 'm 385.78673,141.97188 102.62791,-0.68679 0.19623,121.56402 -102.43168,0.39247 z', num_lote:124},
+        {svg: 'm 489.38904,140.97512 103.9969,0.13875 -0.13875,122.38196 -104.20504,-0.34689 z', num_lote:125},
+        {svg: 'm 593.45531,141.39139 103.78878,-0.55502 0.0693,122.31257 -103.51126,0.27751 z', num_lote:126},
+        {svg: 'm 697.03595,140.62824 103.85815,-0.41627 0.48565,122.79821 -103.85815,-0.20812 z', num_lote:127},
+        {svg: 'm 800.96348,140.48948 103.78878,-0.20813 0.27751,122.31257 -103.61533,0.13876 z', num_lote:128},
+        {svg: 'm 904.75226,140.48948 103.92754,-0.20813 V 262.80206 H 905.09915 Z', num_lote:129},
+        {svg: 'm 1008.6104,140.48948 103.7194,-0.13875 0.4163,122.17381 -103.9276,-0.0693 z', num_lote:130},
+        {svg: 'm 1112.5716,140.35073 103.2694,-0.0694 0.2776,122.10444 -103.3032,0.13876 z', num_lote:131},
+        {svg: 'm 1215.9104,140.28135 103.9031,-0.28521 0.4918,122.4832 -103.9786,-0.0242 z', num_lote:132},
+        {svg: 'm 1319.9362,140.00958 104.0015,-0.39246 -0.1963,122.83952 h -103.6091 z', num_lote:133},
+        {svg: 'm 1423.7414,139.61712 103.7072,0.68681 0.5886,121.85836 -104.3203,0.24529 z', num_lote:134},
+        {svg: 'm 1527.2524,140.30392 104.0996,-0.29434 0.2943,122.15271 h -103.6091 z', num_lote:135},
+        {svg: 'm 1631.1312,140.00958 104.0261,-0.58869 0.098,122.7414 -103.609,-0.19623 z', num_lote:136},
+        {svg: 'm 1735.1204,139.53004 151.9748,0.0173 0.1029,121.64479 -151.7833,0.98114 z', num_lote:137},
+        {svg: 'm 177.11961,18.498075 104.92192,-0.19451 -0.36915,122.691425 -104.73216,-0.21306 z', num_lote:138},
+        {svg: 'm 281.93016,18.15612 103.60529,0.06445 0.71062,122.733765 -104.41401,-0.19623 z', num_lote:139},
+        {svg: 'm 176.72306,18.55751 0.41627,122.43254 -150.559092,0.6125 -0.260655,-122.930095 z', num_lote:140},
+        {svg: 'm 385.59711,18.31049 102.76667,-0.40928 0.19623,122.5353 -102.43168,0.39247 z', num_lote:141},
+        {svg: 'm 489.33818,17.729995 103.9969,-5e-6 -0.13875,123.35324 -104.20504,-0.34689 z', num_lote:142},
+        {svg: 'm 593.40445,17.73 103.78878,0 0.0693,123.00634 -103.51126,0.27751 z', num_lote:143},
+        {svg: 'm 696.98509,18.215645 103.85815,-0.41627 0.48565,122.798205 -103.85815,-0.20812 z', num_lote:144},
+        {svg: 'm 800.91262,18.076885 103.78876,-0.20813 0.2775,122.312565 -103.6153,0.13876 z', num_lote:145},
+        {svg: 'M 904.70138,18.076885 1008.629,17.868755 V 140.38946 H 905.04828 Z', num_lote:146},
+        {svg: 'm 1008.5596,18.076885 103.7194,-0.13875 0.4163,122.173805 -103.9276,-0.0693 z', num_lote:147},
+        {svg: 'm 1111.9321,17.938135 103.8581,-0.0694 0.2776,122.104435 -103.3032,0.13876 z', num_lote:148},
+        {svg: 'm 1215.8596,17.868755 103.9031,-0.28521 0.4918,122.483195 -103.9786,-0.0242 z', num_lote:149},
+        {svg: 'm 1319.8854,17.596985 104.0015,-0.39246 -0.1963,122.839515 h -103.6091 z', num_lote:150},
+        {svg: 'm 1423.6906,17.204525 103.7072,0.68681 0.5886,121.858355 -104.3203,0.24529 z', num_lote:151},
+        {svg: 'm 1527.2016,17.891325 104.0996,-0.29434 0.2943,122.152705 h -103.6091 z', num_lote:152},
+        {svg: 'm 1735.0696,17.117445 151.9748,-0.953985 0.1029,122.61607 -151.7833,0.98114 z', num_lote:153},
+        {svg: 'm 1631.0804,17.596985 104.0261,-0.58869 0.098,122.741395 -103.609,-0.19623 z', num_lote:154},
+  
+      ],
+    }),
+    methods: {
+      handleClick(event) {
+        const color = event.target.getAttribute('data-color');
+  
+        if (color === '#0CD464') {
+          EventBus.$emit('activate-modal');
+        } else {
+          this.notify();
+        }
+  
+      },
+      activateModal() {
+        EventBus.$emit('activate-modal');
+      },
+      notify() {
+        openNotification(this, 'top-center', 'danger');
+      }
+    }
+     
   }
-    
-    
-}
-</script>
-
-<style>
-.svg-container {
-  width: 100%;
-  overflow-x: auto; /* Habilita el scroll horizontal */
-}
-
-::v-deep .vs-select__input {
-  width: 600px; /* Ajusta el ancho a tu necesidad */
-}
-</style>
+  </script>
+  

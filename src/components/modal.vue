@@ -2,8 +2,8 @@
     <b-modal scrollable id="modal-xl" size="xl" :title="'Fraccionamiento Amanecer' + titulo">
         <Area1Component v-if="vista == 'Area1Component'"/>
 
-        <!-- <Area2Component v-if="vista == 'Area2Component'"/>
-        <Area3Component v-if="vista == 'Area3Component'"/>
+        <Area2Component v-if="vista == 'Area2Component'"/>
+        <!-- <Area3Component v-if="vista == 'Area3Component'"/>
         <Area4Component v-if="vista == 'Area4Component'"/>
         <Area5Component v-if="vista == 'Area5Component'"/>
         <Area6Component v-if="vista == 'Area6Component'"/>
@@ -17,7 +17,7 @@
     import { openNotification } from "@/utils/notification.js"
 
     import Area1Component from '@/components/area1.vue';
-    // import Area2Component from '@/components/area2.vue';
+    import Area2Component from '@/components/area2.vue';
     // import Area3Component from '@/components/area3.vue';
     // import Area4Component from '@/components/area4.vue';
     // import Area5Component from '@/components/area5.vue';
@@ -28,7 +28,7 @@
         name: 'ModalComponent',
         components: {
         Area1Component,
-        // Area2Component,
+        Area2Component,
         // Area3Component,
         // Area4Component,
         // Area5Component,
