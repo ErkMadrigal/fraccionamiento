@@ -243,6 +243,7 @@
     mixins: [numberMixin],
     name: 'HomeView',
     data:() => ({
+      mesesFaltantes: null,
       nombre: null,
       telefono: null,
       correo: null,
@@ -329,9 +330,25 @@
         this.totalEscritura = this.precioTotal - (parseFloat(this.datos.enganche) + 15000 + parseFloat(this.datos.sumaTotalTabla))
       },
       generateDates() {
+        // Fecha actual
+        const fechaActual = new Date();
+        
+        // Año y mes de destino (abril 2026)
+        const añoDestino = 2026;
+        const mesDestino = 3; // Abril es el mes 3 (0-indexado)
+        
+        // Calcular la diferencia en años y meses
+        const diferenciaAños = añoDestino - fechaActual.getFullYear();
+        const diferenciaMeses = mesDestino - fechaActual.getMonth();
+        
+        // Total de meses faltantes
+        this.mesesFaltantes = (diferenciaAños * 12) + diferenciaMeses;
+
+
         const dates = [];
         const today = new Date();
-        for (let i = 0; i < 21; i++) {
+        
+        for (let i = 0; i < this.mesesFaltantes; i++) {
           const newDate = new Date(today);
           newDate.setMonth(today.getMonth() + i);
           let pagos = {

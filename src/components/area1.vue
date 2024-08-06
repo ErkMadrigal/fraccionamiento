@@ -1057,7 +1057,7 @@ export default {
     cardEstatusComponent
   },
   data:() => ({
-
+    mesesFaltantes: null,
     paths: [
       { id: '120', color: '#dc3545' }, 
       { id: '108', color: '#ffc107' }, 
@@ -1114,8 +1114,7 @@ export default {
 
     titleAdquiridp: '',
 
-    lotesData: [],
-    
+
 
   }),
   computed: {
@@ -1143,9 +1142,10 @@ export default {
     this.getEnganche();
     this.getPlanCompra();
     this.getLotes();
-    // this.updatePathColors();
+    
   },
   methods: {
+
     handleClick(lote) {
       fetchApi(this.apiUrl+'lotes/'+lote, 'GET')
       .then(data => {
@@ -1191,8 +1191,6 @@ export default {
       let url = this.apiUrl+'lotes/rango/102/120/'
       fetchApi(url, 'GET')
       .then(data => {
-        console.log(data)
-        // this.lotesData = data
         if (!data || !Array.isArray(data)) {
           console.error('dataItems is not initialized or not an array');
           return;
@@ -1222,37 +1220,6 @@ export default {
         });
 
       })
-    },
-    updatePathColors() {
-      // console.log(this.lotesData)
-      // console.log(this.paths)
-      // if (!this.lotesData || !Array.isArray(this.lotesData)) {
-      //   console.error('dataItems is not initialized or not an array');
-      //   return;
-      // }
-
-      // this.dataItems.forEach(item => {
-      //   // Busca el path correspondiente por id (num_lote)
-      //   const path = this.paths.find(p => p.id === String(item.num_lote));
-      //   if (path) {
-      //     // Determina el color basado en el estatus
-      //     let newColor;
-      //     switch (item.estatus) {
-      //       case 'Disponible':
-      //         newColor = '#28a745'; // Verde
-      //         break;
-      //       case 'No Disponible':
-      //         newColor = '#dc3545'; // Rojo
-      //         break;
-      //       case 'En Proceso':
-      //         newColor = '#ffc107'; // Amarillo
-      //         break;
-      //       default:
-      //         newColor = '#6c757d'; // Gris
-      //     }
-      //     path.color = newColor;
-      //   }
-      // });
     },
     activateModal() {
       EventBus.$emit('activate-modal');
@@ -1288,9 +1255,25 @@ export default {
       })
     },
     generateDates() {
+      // Fecha actual
+      const fechaActual = new Date();
+      
+      // Año y mes de destino (abril 2026)
+      const añoDestino = 2026;
+      const mesDestino = 3; // Abril es el mes 3 (0-indexado)
+      
+      // Calcular la diferencia en años y meses
+      const diferenciaAños = añoDestino - fechaActual.getFullYear();
+      const diferenciaMeses = mesDestino - fechaActual.getMonth();
+      
+      // Total de meses faltantes
+      this.mesesFaltantes = (diferenciaAños * 12) + diferenciaMeses;
+
+
       const dates = [];
       const today = new Date();
-      for (let i = 0; i < 21; i++) {
+      
+      for (let i = 0; i < this.mesesFaltantes; i++) {
         const newDate = new Date(today);
         newDate.setMonth(today.getMonth() + i);
         let pagos = {
