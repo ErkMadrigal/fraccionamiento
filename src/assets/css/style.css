@@ -12,9 +12,14 @@ body, html {
 }
       
 body {
-        background: #fff;
-        background-size: cover;
+        background: #f6f6f6 !important;
+        background-size: cover !important;
 }
+
+.icon-align {
+        vertical-align: middle; /* Ajusta la alineación vertical */
+        margin-right: 5px; /* Espacio entre el icono y el texto (ajusta según necesidad) */
+      }
 
 .commissioner {
         font-family: "Commissioner", sans-serif;

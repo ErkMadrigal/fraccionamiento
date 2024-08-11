@@ -718,7 +718,7 @@
             <path
             style=" fill: #dc3545; fill-opacity: 0.5; stroke: '#000000'; stroke-width: 2.18485; stroke-dasharray: 'none';"
             d="m 1163.133,-26.069195 2.2212,-125.107575 169.4071,0.58123 -3.2579,109.995852 -70.7837,15.838237 z"
-            :id="path102"  @click="handleClick('120')"
+            id="path102"  @click="handleClick('120')"
             transform="translate(149.36466,319.59445)" />
             
             <path
