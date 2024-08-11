@@ -1,15 +1,20 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+// import HomeView from '../views/HomeView.vue'
+
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: HomeView
+    // name: 'Home',
+    // component: HomeView
+    beforeEnter() {
+      window.location.href = '/pages/index.html'; // Ajusta la ruta al archivo HTML deseado
+    }
   },
+  
   {
     path: '/Mapa',
     name: 'Mapa',

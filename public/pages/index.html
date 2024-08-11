@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rivo is a personal portfolio HTML template with clean and elegant design">
+    <meta name="keywords" content="dark, html, one page, bootstrap,design, creative, onepage, clean, modern,blog,business,parallax">
+    <title>Fraccionamientos</title>
+    <!--css styles-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Martel:200,300,400,600,700,800,900%7CRaleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i%7CRoboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/preview.css">
+    <!---title logo icon-->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <!-- Respond.js IE8 support media queries -->
+    
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+            overflow-x: hidden;
+            background-color: #121212;
+        }
+      
+        /* Parallax effect - the background image moves slower than the content */
+        .parallax {
+            height: 700px; /* Altura del efecto parallax */
+            background-image: 
+                linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), /* Color de fondo con transparencia */
+                url('./images/squareBg.jpg'); /* Imagen de fondo */
+            background-attachment: fixed; /* Esto crea el efecto parallax */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* Contenido de la página */
+        .content {
+            height: 400px;
+            text-align: center;
+            padding: 50px;
+        }
+
+
+        /* Contenedor de video */
+        .video-container {
+            position: relative;
+            height: 85vh; /* Hace que el video ocupe toda la altura de la ventana */
+            overflow: hidden;
+            border-radius: 2rem;
+            margin: 1rem;
+        }
+
+        .video-background {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: 1;
+            transform: translate(-50%, -50%);
+            object-fit: cover; 
+        }
+
+        /* Overlay de color */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Color con transparencia */
+            z-index: 2;
+        }
+
+        /* Texto superpuesto */
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            z-index: 3;
+            padding: 0 20px;
+        }
+
+        .text-overlay h1 {
+            font-size: 6rem; /* Tamaño grande para el título */
+            margin: 0;
+            padding: 0;
+            line-height: 1.2;
+        }
+
+        .text-overlay p {
+            font-size: 1.5rem; /* Tamaño del texto adicional */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            .text-overlay h1 {
+                font-size: 4.5rem; /* Reduce el tamaño del título en pantallas más pequeñas */
+            }
+            
+            .text-overlay p {
+                font-size: 1.5rem; /* Reduce el tamaño del texto adicional en pantallas más pequeñas */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .text-overlay h1 {
+                font-size: 2em; /* Aún más pequeño en pantallas muy pequeñas */
+            }
+            
+            .text-overlay p {
+                font-size: 0.9em; /* Ajuste adicional para pantallas pequeñas */
+            }
+
+            .content{
+                padding: 0px;
+            }
+        }
+       
+    </style>
+</head>
+
+<body>
+    <!-- Start Preloader -->
+    <div class="preloader">
+        <div class="preloader-img"></div>
+    </div>
+    <div class="video-container">
+        <video autoplay muted loop class="video-background">
+            <source src="./video/video.mp4" type="video/mp4">
+            Para disfrutar la experiencia cambie de navegador
+        </video>
+        <div class="overlay"></div>
+        <div class="text-overlay">
+            <h1 class="text-white fz-5">Encuentra tu nuevo hogar</h1>
+            <p>Contamos con espacios para que vivas feliz y en armonía.</p>
+        </div>
+    </div>
+   
+    <div class="content">
+        <!-- End Preloader -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="item">
+                        <a href="almanta.html" class="image-background">
+                            <img src="images/preview/almanta.jpeg" alt="image-bg">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="item redirect">
+                        <a href="#" class="particle-background">
+                            <img src="images/preview/view2.png" alt="particle-bg">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="item redirect">
+                        <a href="#" class="snow-background">
+                            <img src="images/preview/view3.png" alt="snow-bg">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="item redirect">
+                        <a href="#" class="square-background">
+                            <img src="images/preview/view4.png" alt="square-bg">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="item redirect">
+                        <a href="#" class="birds-background">
+                            <img src="images/preview/view5.png" alt="birds-bg">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="item redirect">
+                        <a href="#" class="cloud-background">
+                            <img src="images/preview/view6.png" alt="cloud-bg">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="item redirect">
+                        <a href="#" class="fog-background">
+                            <img src="images/preview/view7.png" alt="fog-bg">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="item redirect">
+                        <a href="#" class="waves-background">
+                            <img src="images/preview/view8.png" alt="waves-bg">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="item soon">
+                        <a href="#">
+                            <p>Más próximamente</p>
+                        </a>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+
+    </div>
+
+    <div class="parallax"></div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white">
+        <div class="container py-5">
+            <div class="row">
+                <!-- Primera columna -->
+                <div class="col-md-4">
+                    <h5>Sobre Nosotros</h5>
+                    <p class="text-muted">Somos una empresa dedicada a proveer los mejores servicios en nuestro sector.</p>
+                </div>
+
+                <!-- Segunda columna -->
+                <div class="col-md-4">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Inicio</a></li>
+                        <li><a href="#" class="text-white">Servicios</a></li>
+                        <li><a href="#" class="text-white">Contacto</a></li>
+                        <li><a href="#" class="text-white">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+
+                <!-- Tercera columna -->
+                <div class="col-md-4">
+                    <h5>Contáctanos</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-telephone"></i> +1 234 567 890</li>
+                        <li><i class="bi bi-envelope"></i> info@example.com</li>
+                        <li><i class="bi bi-geo-alt"></i> 123 Calle Principal, Ciudad, País</li>
+                    </ul>
+                    <div class="mt-3">
+                        <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-secondary text-center py-3">
+            <p class="mb-0">&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+
+
+    <!--javascript-->
+        <!--javascript-->
+        <script>
+            // Selecciona todos los botones con la clase 'redirect'
+            const buttons = document.querySelectorAll('.redirect');
+
+            // Itera sobre la NodeList y agrega el event listener a cada botón
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Redirigir a la ruta de Vue.js
+                    window.location.href = '/#/Desarrollo';
+                });
+            });;
+        </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/preview.js"></script>
+</body>
