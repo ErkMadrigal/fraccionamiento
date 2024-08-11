@@ -6,6 +6,7 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     cardEstatusDatos: {},
+    cardCotizacionDatos: {},
     datos: null,
     fechas: []
   },
@@ -17,6 +18,9 @@ export default new Vuex.Store({
   mutations: {
     setCardEstatusDatos(state, datos) {
       state.cardEstatusDatos = datos;
+    },
+    setCardCotizacionDatos(state, datos) {
+      state.cardCotizacionDatos = datos;
     },
     setDatos(state, payload) {
       state.datos = payload;

@@ -1,7 +1,13 @@
 
 <template>
     <div>
-      <b-card style="max-width: 540px;" :class="[{ 'card-border-warning': cardDatos.id_estatus == 6, 'card-border-danger': cardDatos.id_estatus == 7 }, 'card-rounder']"   title="Lote apartado por NombreUsuario" :sub-title="cardDatos.area">
+      <b-card v-if="isLoading" class="mt-3">
+        <b-skeleton animation="fade" width="85%"></b-skeleton>
+        <b-skeleton animation="fade" width="55%"></b-skeleton>
+        <b-skeleton animation="fade" width="70%"></b-skeleton>
+      </b-card>
+
+      <b-card v-else style="max-width: 540px;" :class="[{ 'card-border-warning': cardDatos.id_estatus == 6, 'card-border-danger': cardDatos.id_estatus == 7 }, 'card-rounder']"   :title="generateTitle()" :sub-title="cardDatos.area + 'm2'">
         <b-row>
             <b-col lg="4" sm="6">
               <p>
@@ -52,6 +58,7 @@ export default {
       area: null,
       descuento: null,
       textoLxA: null,
+      isLoading: true,
   }),
   computed: {
     cardDatos() {
@@ -63,7 +70,21 @@ export default {
       this.precio = this.area * this.cardDatos.precio
       this.descuento = this.precio * (this.cardDatos.descuento/100)
       this.textoLxA = this.cardDatos.ancho+'m x '+ this.cardDatos.largo+'m';
+      setTimeout(() => {
+        this.isLoading = false;
+      }, 2000); // Simula 2 segundos de carga
 
+  },
+  methods: {
+    generateTitle() {
+      let titlePrefix = '';
+      if (this.cardDatos.id_estatus === 6) {
+        titlePrefix = 'Lote apartado por';
+      } else if (this.cardDatos.id_estatus === 7) {
+        titlePrefix = 'Lote comprado por';
+      }
+      return `${titlePrefix} ${this.cardDatos.nombre_usuario}`;
+    }
   }
 
   
