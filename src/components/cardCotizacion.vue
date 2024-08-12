@@ -27,7 +27,7 @@
             </b-col>
             <b-col lg="4" sm="6">
               <p >
-                total: <br> <strong> {{ formattedNumber(area + cardDatos.excedente) }}m<sup>2</sup></strong>
+                total: <br> <strong> {{ formattedNumber(parseFloat(area) + parseFloat(cardDatos.excedente)) }}m<sup>2</sup></strong>
               </p>
             </b-col>
             <b-col lg="4" sm="6">
