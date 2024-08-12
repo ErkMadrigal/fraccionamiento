@@ -259,6 +259,7 @@
       descuento: null,
       tipoCompra: null,
       totalEscritura: null,
+      apiUrl: process.env.VUE_APP_API_URL,
       
     }),
     
@@ -287,9 +288,56 @@
           this.max = 7
         }, 4000);
       },
-      enviarEmail(){
-        console.log("entre")
-        this.notify('success', 'Correo enviado Con exito', 'Recuerda ver en Spam');
+      async enviarEmail(){
+        if(!this.correo || !this.telefono || !this.nombre){
+            this.notify('danger', 'Error: Los Campos del personales son pequeridos', 'verifica que los campos esten completos');
+            return 0;
+        }
+
+        let json = {
+            lote: '124',
+            nombreCliente: this.nombre,
+            
+            lxa: '8.00m x 16.00m',
+            mLote: "128.00m2",
+            exedente: "0.00m2",
+            areaTotal: "128.00m2",
+
+            apartado: "15,000.00",
+            precioM: "5,250.00",
+
+            planCompra: "contado",
+            mesualidades: "20",
+            totalMensualidades: "283,500.00",
+
+            Enganche: "135,000.00",
+            totalPagos: "150,000.00",
+
+            planPagos: [
+                { pago: 'Mensualidad 1', fecha: "11/8/2024", importe: "13,000.00" },
+                { pago: 'Mensualidad 2', fecha: "11/9/2024", importe: "13,000.00" }
+            ],
+
+            PrecioLista: "672,000.00",
+            descuento: "26,880.00",
+            PrecioTotal: "645,120.00",
+            escritura: "211,620.00",
+            correo: this.correo
+        };
+        let res = await fetch(this.apiUrl+"email/send-email",{
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': "*",
+            },
+            body: JSON.stringify(json)
+        })
+
+        if(res.status == 200){
+          this.notify('success', 'Correo enviado Con exito', 'Recuerda revisar tu bandeja de Spam');
+        }else{
+          this.notify('danger', 'Error: Correo NO enviado', 'si el error persiste comuniquese con el Administrador');
+        }
       },
       notify(color, title, text) {
         openNotification(this, 'top-center', color, title, text);
